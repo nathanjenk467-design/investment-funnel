@@ -1,1 +1,1131 @@
-SEE_NEXT_CALL_WITH_FULL_CONTENT
+{
+  "rev": 5,
+  "title": "Investment funnel",
+  "lede": "Funnel is world pictures and thesis candidates (expressions). Candidates tab is names (spawned or thrown), then Screen after analysis, then monitor / action / book. Reload for the latest walk. Shell loads board.json from GitHub raw so this page can refresh.",
+  "meta": "14 Aug 2026. Thrown-name set closed. MU monitor. Five dies. LEENO dies as a hold. rev 5 · 14 Aug 2026 22:05 HKT",
+  "judge": "Thrown-name set closed. ST-08 MU is the only hang (TH-01 / CA-01, 8/10, MONITOR via WL-02). ST-05 VEEV 1/10, ST-06 UMI.BR 2/10, ST-07 RIVN 1/10 die (no hang). ST-09 GOOGL 3/10 dies as a hold (spender). ST-10 LEENO 4/10 dies as a hold (test-side sockets, not the scarce plant). ST-01/02/03/04 still unfinished. Book empty. No new thesis from the holes.",
+  "tabs": [
+    {
+      "id": "funnel",
+      "name": "Funnel",
+      "default": true,
+      "legend": [
+        {
+          "color": "#1e3a5f",
+          "label": "Board"
+        },
+        {
+          "color": "#1a4d2e",
+          "label": "Theses 6–12 months"
+        },
+        {
+          "color": "#5c4a1f",
+          "label": "Theses now"
+        },
+        {
+          "color": "#1a3d4d",
+          "label": "Thesis candidates"
+        },
+        {
+          "color": "#2a2222",
+          "label": "Dead / parked"
+        }
+      ],
+      "legend_note": "labels: board card · prediction · observation · live · expression",
+      "layout": "funnel",
+      "columns": [
+        {
+          "id": "board",
+          "name": "Board",
+          "class": "board",
+          "subtitle": "cooked Trend-board cards + P1–P3 + OB-01/02/03. Not narratives.",
+          "cards": [
+            {
+              "id": "15",
+              "kind": "board_card",
+              "lifecycle": "rising",
+              "heat": {
+                "text": "Rising on the board",
+                "score": 14
+              },
+              "tags": [
+                {
+                  "label": "board card",
+                  "class": "kind"
+                }
+              ],
+              "title": "AI chip factories are still dramatically under-built",
+              "story": "The plants that make the chips were not built fast enough for the demand now hitting them. That shortage, not a China-invasion story, is still the brake. New tapes this week did not kill it. They keep running into the same wall.",
+              "force": "Force: they did not build enough plants. Supply and demand, not political theater.",
+              "from": "From: the TSMC story already kept. Fed this week by All-In, Dylan Patel, Stratechery."
+            },
+            {
+              "id": "7",
+              "kind": "board_card",
+              "lifecycle": "rising",
+              "heat": {
+                "text": "Rising on the board",
+                "score": 14
+              },
+              "tags": [
+                {
+                  "label": "board card",
+                  "class": "kind"
+                }
+              ],
+              "title": "In July the market panicked. The factories did not.",
+              "story": "AI stock prices had a crash month that felt like 2022. Gavin Baker went looking for a real-world reason and could not find one. Chips were getting easier to get, rental prices were up, memory was up, and people were using more tokens, not less. The scare was in the price of the shares. It was not in the plants.",
+              "force": "Force: the share price and the factory can point opposite ways. Read both.",
+              "from": "From: Gavin Baker, Invest Like the Best, 4 Aug. MSM: FT Alphaville, BBC, and the FSB ran the July “AI bubble” scare."
+            },
+            {
+              "id": "16",
+              "kind": "board_card",
+              "lifecycle": "rising",
+              "heat": {
+                "text": "Rising on the board",
+                "score": 14
+              },
+              "tags": [
+                {
+                  "label": "board card",
+                  "class": "kind"
+                }
+              ],
+              "title": "Compute is getting dearer, and old cards still earn",
+              "story": "Useful intelligence is getting more expensive, not cheaper. An H100 is worth more today than three years ago. When a model got ten times cheaper, people used it thirteen times more. A six-year write-off looks wrong because the cards stay in the money long after the accountant is done with them.",
+              "force": "Force: more demand for the same scarce machines, and the machines last.",
+              "from": "From: the compute-dearer story already kept. Enforced this week by Atallah, Dylan Patel, Stratechery."
+            },
+            {
+              "id": "1",
+              "kind": "board_card",
+              "lifecycle": "rising",
+              "heat": {
+                "text": "Rising on the board",
+                "score": 14
+              },
+              "tags": [
+                {
+                  "label": "board card",
+                  "class": "kind"
+                }
+              ],
+              "title": "The money is going to the plants, not the next model",
+              "story": "Google is putting cash into data-center plants, not into the next model. Inside the company the cloud team wants to rent those chips out, and the model team wants the same chips to train. The chips are winning.",
+              "force": "Force: capital follows the scarce physical thing (plants, power, chips), not the research team.",
+              "from": "From: All-In 8 Aug (Friedberg, Gerstner). Stratechery: Google the capital company."
+            },
+            {
+              "id": "6",
+              "kind": "board_card",
+              "lifecycle": "emerging",
+              "heat": {
+                "text": "Emerging on the board",
+                "score": 14,
+                "note": "sits next to P2. No fourth thesis this walk."
+              },
+              "tags": [
+                {
+                  "label": "board card",
+                  "class": "kind"
+                }
+              ],
+              "title": "Ordinary funding may be exhausted. That is why they are lending to themselves.",
+              "story": "The plants and the labs need more cash than earnings, banks, and ordinary borrowing can cover. That claim still needs proof. If it is true, they have to invent other money: chip sellers lending to their own buyers, Nvidia reaching into insurance and pension money, the same dollars going around the same few companies and getting counted as revenue. Circular funding and the debt pile are what you do when the normal tap is dry. The BIS has already said the biggest cloud companies are spending faster than they earn. That is a start, not a close.",
+              "force": "Force: if ordinary money is exhausted, the stack starts lending to itself. Prove the exhaustion, not the weirdness.",
+              "from": "From: the board frame. All-In (Gurley circular). Stratechery 11 Aug Nvidia’s risky business. Gavin Baker on credit wrappers. BIS on hyperscaler spend vs cash."
+            },
+            {
+              "id": "11",
+              "kind": "board_card",
+              "lifecycle": "emerging",
+              "fight": true,
+              "heat": {
+                "text": "Emerging on the board",
+                "score": 13,
+                "fight": true
+              },
+              "tags": [
+                {
+                  "label": "board card",
+                  "class": "kind"
+                },
+                {
+                  "label": "fight",
+                  "class": "fight"
+                }
+              ],
+              "title": "Power is the problem. Nobody agrees what happens next.",
+              "story": "Everyone serious now says intelligence will hit a wall made of electricity. That part is shared. The fight is about the future. One camp says China will add far more power than America next year, so energy stays the limit. Another camp says you can build power, and the real 2030 bind is the rarest machines that make the chips. A third camp says put the plants in space, because on the ground you cannot get a permit. These cannot all be right about what happens next.",
+              "force": "Force: the problem is agreed. The path and the fix are not. The world will pick by what actually fails first.",
+              "from": "From: Vishria 11 Aug. Dylan Patel 13 Mar. Dwarkesh Elon 5 Feb. Stratechery SpaceX IPO."
+            },
+            {
+              "id": "10",
+              "kind": "board_card",
+              "lifecycle": "emerging",
+              "heat": {
+                "text": "Emerging on the board",
+                "score": 11
+              },
+              "tags": [
+                {
+                  "label": "board card",
+                  "class": "kind"
+                }
+              ],
+              "title": "China is locking the ugly supply chains",
+              "story": "China stopped exporting research monkeys. Prices jumped, US labs ran short. It already refines most rare earths and is moving to own the robots that run the mines, not just the rocks. In the Iran oil shock it quietly cut imports from stockpiles the West cannot see. The FCC just swept robot vacuums and humanoids onto a national-security import list. Each of these is an input the West did not build a second source for.",
+              "force": "Force: whoever owns the unglamorous input can turn it off.",
+              "from": "From: ChinaTalk 14 Jul–13 Aug (monkeys, minerals, oil, FCC robots)."
+            },
+            {
+              "id": "18",
+              "kind": "board_card",
+              "lifecycle": "emerging",
+              "heat": {
+                "text": "Emerging on the board",
+                "score": 11
+              },
+              "tags": [
+                {
+                  "label": "board card",
+                  "class": "kind"
+                }
+              ],
+              "title": "The payment system has not caught up to the model",
+              "story": "Intelligence is getting expensive. The rails that pay for it are still yesterday’s rails. Stripe talks about software agents that need to pay for things. A payments founder says the banker in your pocket is coming and is not here. This is not a crypto-price story. It is that the model and the payment have not joined up.",
+              "force": "Force: the old money system has not caught up to who should pay, or how.",
+              "from": "From: Founders 2 Aug Micky Malka. Stripe / Collison."
+            },
+            {
+              "id": "P1",
+              "kind": "prediction",
+              "lifecycle": "open",
+              "tags": [
+                {
+                  "label": "prediction",
+                  "class": "pred"
+                }
+              ],
+              "title": "The chip factories will still be the bottleneck at Christmas, even if the stocks crash again",
+              "story": "The plants that make AI chips were not built fast enough. That is why computers for intelligence are expensive, and why a three-year-old chip still earns money. In July the newspapers and the stock market had a panic. A fund manager went looking for a factory reason and could not find one. The scare was in the share price. It was not in the factories.",
+              "force": "By 31 December 2026 that is still true. The wait for a new chip, and the price to rent one, will still be tight or tighter.",
+              "from": "Wrong if: the wait gets easy and rents collapse, while everyone is still talking about AI. Evidence for TH-01. Not a second thesis.",
+              "stats": "How sure: 4/5 · How big if true: 5/5 · Call by 31 Dec 2026 · open"
+            },
+            {
+              "id": "P2",
+              "kind": "prediction",
+              "lifecycle": "open",
+              "tags": [
+                {
+                  "label": "prediction",
+                  "class": "pred"
+                }
+              ],
+              "title": "If ordinary money is exhausted, one of these alternative deals will break in public within a year",
+              "story": "If the usual funding is exhausted, companies are no longer just paying cash. Chip sellers are lending to their own buyers. Nvidia is reaching into insurance money and pension money. The same dollars go around the same few companies and get counted as revenue. That can look like a boom on paper while the cash never came from a real customer.",
+              "force": "Before 14 August 2027, one of these loans or insurance deals will blow up, get rewritten, or show up in a newspaper with a real company name on it. A podcast complaining about circular money is not enough.",
+              "from": "Wrong if: a year from now the plants are still being paid with ordinary cash, and the strange paper is gone. Sits next to board card 6. Not minted as a thesis this walk.",
+              "stats": "How sure: 3/5 · How big if true: 5/5 · Call by 14 Aug 2027 · open"
+            },
+            {
+              "id": "P3",
+              "kind": "prediction",
+              "lifecycle": "open",
+              "tags": [
+                {
+                  "label": "prediction",
+                  "class": "pred"
+                }
+              ],
+              "title": "OpenAI and Anthropic will still take the money. Cheap models will take the usage.",
+              "story": "There are two markets now, and they are not the same. The two best labs can still charge for the model itself. Everyone a year behind can only charge for computers and consulting. Cheap and Chinese open models already do most of the everyday work. Money and usage have split.",
+              "force": "A year from now that split is still there. The expensive labs still collect most of the dollars. The cheap models still do most of the work.",
+              "from": "Wrong if: a cheap model starts collecting the dollars too, or the expensive labs lose the dollar pile. Priced / capture question. Not a new desk item.",
+              "stats": "How sure: 4/5 · How big if true: 4/5 · Call by 14 Aug 2027 · open"
+            },
+            {
+              "id": "OB-01",
+              "kind": "observation",
+              "tags": [
+                {
+                  "label": "observation",
+                  "class": "obs"
+                }
+              ],
+              "title": "China catching up in trailing-edge robotics semiconductors",
+              "story": "More than 300 Chinese auto and industrial chip suppliers are on the trailing-edge nodes that robots actually use. NXP and Infineon share is fading in those sockets. This is not a leading-edge TSMC story.",
+              "force": "Force: the chips inside robots are older nodes, and China is filling that shelf.",
+              "from": "From: kept observation. SemiAnalysis, 11 Mar 2025."
+            },
+            {
+              "id": "OB-02",
+              "kind": "observation",
+              "tags": [
+                {
+                  "label": "observation",
+                  "class": "obs"
+                }
+              ],
+              "title": "Unitree G1 at $16K against a ~$100K Western humanoid",
+              "story": "Unitree is selling a G1 near $16,000. Western humanoids are still talked about near $100,000. UBTech is targeting about 1,000 units. Price and shipment talk, not a proven Western displacement.",
+              "force": "Force: the cheap unit is already a product. The expensive unit is still a plan.",
+              "from": "From: kept observation. SemiAnalysis."
+            },
+            {
+              "id": "OB-03",
+              "kind": "observation",
+              "tags": [
+                {
+                  "label": "observation",
+                  "class": "obs"
+                }
+              ],
+              "title": "China holds about 90% of permanent magnets",
+              "story": "China still refines and makes most of the permanent magnets a motor needs. A Made-in-USA label after substantial transformation does not create a second magnet mine.",
+              "force": "Force: the magnet is the input. Assembly is not a substitute.",
+              "from": "From: kept observation. SemiAnalysis."
+            }
+          ]
+        },
+        {
+          "id": "theses",
+          "name": "Theses 6–12 months",
+          "class": "theses",
+          "subtitle": "forward pictures minted from the board. Not already moving the world.",
+          "cards": [
+            {
+              "id": "TH-01",
+              "kind": "thesis",
+              "lifecycle": "live",
+              "horizon": "6-12m",
+              "on_desk": false,
+              "tags": [
+                {
+                  "label": "live",
+                  "class": "live"
+                }
+              ],
+              "title": "The plants are still the scarce thing, and July’s scare was in the shares",
+              "claim": "The factories that make the chips were not built fast enough for the demand now hitting them. That shortage is still the brake. In July the shares panicked and the factories did not: chips were getting easier to get, rental and memory prices were up, and token use was up. Capital is already moving toward the plants, not the next model. The 6–12 month picture is that the physical thing stays scarce, and that July was a price event, not a factory event.",
+              "from": "From board: cards 15, 7, 16, 1. Prediction P1 is evidence, not a second thesis.",
+              "fields": [
+                {
+                  "label": "Clock",
+                  "text": "6–12 months. Call window overlaps P1 (bottleneck still true at Christmas)."
+                },
+                {
+                  "label": "Kill",
+                  "text": "utilization down, rental and memory prices down, large capex cancelled. A second share-price scare without those prints is not a kill."
+                },
+                {
+                  "label": "Priced",
+                  "text": "July already ran the bubble scare. If that scare has faded, some of this is back in the price. Not checked against a tape. No live prices on this walk."
+                },
+                {
+                  "label": "Skew",
+                  "text": "The honest side is long the scarce physical thing. Equity names that everyone already uses for this view (the foundry, the obvious power names) may have no skew left. That is why this is live and not on the desk."
+                }
+              ],
+              "desk": "Desk: not on desk — priced-in not checked; default expressions look crowded",
+              "desk_fail": true
+            },
+            {
+              "id": "TH-02",
+              "kind": "thesis",
+              "lifecycle": "live",
+              "horizon": "6-12m",
+              "on_desk": false,
+              "tags": [
+                {
+                  "label": "live",
+                  "class": "live"
+                }
+              ],
+              "title": "China already owns the ugly inputs Western robots need",
+              "claim": "China stopped the monkeys, holds the rare earths and about 90% of the permanent magnets, is filling the trailing-edge MCU sockets robots actually use, and is already shipping a cheap humanoid unit. The West did not build a second source for the unglamorous inputs. That is one situation: the input is already theirs. It is not a claim that a US-listed humanoid works, or that a Western robot company is the way to hold it.",
+              "from": "From board: card 10 plus OB-01, OB-02, OB-03.",
+              "fields": [
+                {
+                  "label": "Clock",
+                  "text": "6–12 months"
+                },
+                {
+                  "label": "Kill",
+                  "text": "magnet export relief plus a real Western second source, or Chinese humanoid shipments fail in public numbers."
+                },
+                {
+                  "label": "Priced",
+                  "text": "not checked. No tape on this walk."
+                },
+                {
+                  "label": "Skew",
+                  "text": "The obvious long — a US-listed humanoid — is the expensive side of the same fact. The input / squeeze side is the real expression and is unfinished. No written instrument yet."
+                }
+              ],
+              "desk": "Desk: not on desk — no written expression with skew yet",
+              "desk_fail": true
+            },
+            {
+              "id": "TH-03",
+              "kind": "thesis",
+              "lifecycle": "live",
+              "horizon": "6-12m",
+              "on_desk": false,
+              "tags": [
+                {
+                  "label": "live",
+                  "class": "live"
+                },
+                {
+                  "label": "failed skew",
+                  "class": "fail"
+                }
+              ],
+              "title": "The model can spend. The payment rail cannot.",
+              "claim": "Intelligence is getting expensive. The rails that pay for it are still yesterday’s rails. Stripe talks about agents that need to pay. Malka’s point is that the banker in your pocket is coming and is not here. The model and the payment have not joined up. That is the situation. It is not a crypto-price story, and it is not a claim that a new payments winner already exists.",
+              "from": "From board: card 18 and the Malka observation that the money is not wired into AI. P3 is a capture question, not a payments desk item.",
+              "fields": [
+                {
+                  "label": "Clock",
+                  "text": "6–12 months"
+                },
+                {
+                  "label": "Kill",
+                  "text": "agents stay demos; existing rails (Visa, Stripe, banks) absorb the traffic without a new winner."
+                },
+                {
+                  "label": "Priced",
+                  "text": "“AI payments” is an easy story and is probably in several names already. Not checked live."
+                },
+                {
+                  "label": "Skew",
+                  "text": "On the obvious names this looks like 10%, not 10x, unless a cheap specific expression appears. That is a failed skew gate, not a dead picture."
+                }
+              ],
+              "desk": "Desk: failed skew gate — not enough asymmetry on the obvious names",
+              "desk_fail": true
+            },
+            {
+              "id": "TH-04",
+              "kind": "thesis",
+              "lifecycle": "live",
+              "horizon": "6-12m",
+              "on_desk": false,
+              "tags": [
+                {
+                  "label": "live",
+                  "class": "live"
+                }
+              ],
+              "title": "The stack is lending to itself to pay for the plants",
+              "claim": "The plants and the labs are already being funded in a circle: chip sellers lending to their own buyers, wrappers into insurance and pension money, the same dollars counted as revenue. Over the next year that paper either becomes how the plants get built, or one of those deals breaks, gets rewritten, or is named in public.",
+              "from": "From board: card 6. Prediction P2.",
+              "fields": [
+                {
+                  "label": "Clock",
+                  "text": "6–12 months. P2 named break/rewrite/newspaper deal before 14 Aug 2027."
+                },
+                {
+                  "label": "Kill",
+                  "text": "The plants are still being paid with ordinary cash, and the strange paper is gone."
+                }
+              ],
+              "desk": "not on desk — priced unchecked"
+            },
+            {
+              "id": "TH-06",
+              "kind": "thesis",
+              "lifecycle": "live",
+              "horizon": "6-12m",
+              "on_desk": false,
+              "tags": [
+                {
+                  "label": "live",
+                  "class": "live"
+                }
+              ],
+              "title": "China is catching up through data, not invasion",
+              "claim": "US shops are already selling labeled, expert-corrected data to Chinese labs. That is a catch-up channel that is not the 2019 machine ban and not an invasion. The 6–12 month picture is that this channel stays open and is how the gap keeps closing.",
+              "from": "From board: card 5.",
+              "fields": [
+                {
+                  "label": "Clock",
+                  "text": "6–12 months"
+                },
+                {
+                  "label": "Kill",
+                  "text": "The data channel shuts and the gap stops closing that way; or the catch-up that actually happens is machines or invasion."
+                }
+              ],
+              "desk": "not on desk — priced unchecked"
+            }
+          ]
+        },
+        {
+          "id": "now",
+          "name": "Theses now",
+          "class": "now",
+          "subtitle": "dominating / rising / peaking in the world right now. Not a 6–12 month bet.",
+          "empty": "None. A now-thesis is already moving the world; it is not a forward picture.",
+          "cards": [
+            {
+              "id": "TH-05",
+              "kind": "thesis",
+              "lifecycle": "live",
+              "horizon": "now",
+              "on_desk": false,
+              "tags": [
+                {
+                  "label": "now",
+                  "class": "now"
+                },
+                {
+                  "label": "live",
+                  "class": "live"
+                }
+              ],
+              "title": "Frontier still takes the dollars. Cheap models take the work.",
+              "claim": "There are already two markets. The frontier labs still charge for the model. Everyone a year behind charges for computers and consulting. Cheap and Chinese open models already take most of the tokens. That split is the world now. P3 is what would end it.",
+              "from": "From board: card 2. Prediction P3.",
+              "fields": [
+                {
+                  "label": "Clock",
+                  "text": "Already true. It is the market now."
+                },
+                {
+                  "label": "Kill",
+                  "text": "A cheap model starts collecting the dollars, or the frontier labs lose the dollar pile."
+                }
+              ],
+              "desk": "not on desk — consensus, not a forward bet"
+            }
+          ]
+        },
+        {
+          "id": "thesis-cands",
+          "name": "Thesis candidates",
+          "class": "thesis-cands",
+          "subtitle": "expressions of a live thesis. Not a name. Not a buy. Spawns stock rows.",
+          "cards": [
+            {
+              "id": "CA-01",
+              "kind": "thesis_candidate",
+              "lifecycle": "thesis_candidate",
+              "unfinished": true,
+              "buy": false,
+              "tags": [
+                {
+                  "label": "expression",
+                  "class": "expr"
+                },
+                {
+                  "label": "unfinished",
+                  "class": "unfinished"
+                }
+              ],
+              "title": "Plant-and-power landlords",
+              "story": "An expression of TH-01, not a stock. The way to hold “the plants are still the scarce thing” is to sit with the people who own the scarce physical thing — the foundry, the power landlords. This card is that picture. It is not a ticker. It will spawn stock rows on the Candidates tab.",
+              "from": "From: TH-01",
+              "fields": [
+                {
+                  "label": "What it is",
+                  "text": "A thesis candidate. A shape for how TH-01 would be held, before any name is screened."
+                },
+                {
+                  "label": "What it is not",
+                  "text": "A stock. A buy. A price."
+                },
+                {
+                  "label": "Why unfinished",
+                  "text": "No live prices on the names it would spawn. No written skew. Several names may be one factor bet. July’s scare was not marked against a tape."
+                },
+                {
+                  "label": "Clock / kill",
+                  "text": "inherits TH-01 — utilization, rents, memory, cancelled capex."
+                },
+                {
+                  "label": "Spawns",
+                  "text": "ST-01, ST-02 on the Candidates tab."
+                }
+              ],
+              "desk": "Not a buy. Lifecycle: thesis candidate. Unfinished.",
+              "desk_fail": true
+            },
+            {
+              "id": "CA-02",
+              "kind": "thesis_candidate",
+              "lifecycle": "thesis_candidate",
+              "unfinished": true,
+              "buy": false,
+              "tags": [
+                {
+                  "label": "expression",
+                  "class": "expr"
+                },
+                {
+                  "label": "unfinished",
+                  "class": "unfinished"
+                }
+              ],
+              "title": "Ugly-input landlords",
+              "story": "Expression of TH-02. Sit with whoever already owns the magnet and the trailing-edge socket. Not a US-listed humanoid. Not a Western rare-earth second source (that is the kill).",
+              "from": "From: TH-02",
+              "fields": [
+                {
+                  "label": "What it is",
+                  "text": "Input / squeeze side of TH-02. Unfinished. No ticker we can stand behind."
+                },
+                {
+                  "label": "Spawns",
+                  "text": "ST-03 magnet/RE unnamed. ST-04 trailing-edge MCU unnamed."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "strips": [
+        {
+          "id": "dead",
+          "name": "Dead / parked",
+          "class": "deadstrip",
+          "subtitle": "killed or parked pictures. Held / off-desk is not dead.",
+          "empty": "None this walk.",
+          "foot": "Off the desk is not a column. Desk decisions sit on each TH card.",
+          "cards": []
+        }
+      ]
+    },
+    {
+      "id": "candidates",
+      "name": "Candidates",
+      "default": false,
+      "legend": [
+        {
+          "color": "#1a3d4d",
+          "label": "Stocks"
+        },
+        {
+          "color": "#5c4a1f",
+          "label": "Screen"
+        },
+        {
+          "color": "#3d3d3d",
+          "label": "Monitor"
+        },
+        {
+          "color": "#1a4d2e",
+          "label": "Action"
+        },
+        {
+          "color": "#2a2222",
+          "label": "Book"
+        }
+      ],
+      "legend_note": "labels: unfinished · waitlist",
+      "layout": "candidates",
+      "columns": [
+        {
+          "id": "stocks",
+          "name": "Stocks",
+          "class": "stocks",
+          "subtitle": "spawned from a thesis candidate, or a name you threw. Not analyzed yet. Not a buy.",
+          "cards": [
+            {
+              "id": "ST-01",
+              "kind": "stock",
+              "lifecycle": "unfinished",
+              "unfinished": true,
+              "buy": false,
+              "tags": [
+                {
+                  "label": "stock",
+                  "class": "stock"
+                },
+                {
+                  "label": "unfinished",
+                  "class": "unfinished"
+                }
+              ],
+              "title": "Taiwan Semiconductor (TSM)",
+              "story": "The default name people already use for the foundry side of TH-01. Unfinished. No live price. May be crowded. Not a buy.",
+              "from": "From: CA-01 / TH-01",
+              "fields": [
+                {
+                  "label": "What it is",
+                  "text": "A stock name spawned by CA-01. Not screened."
+                },
+                {
+                  "label": "Why unfinished",
+                  "text": "No live price. No written skew. The default name may already have no skew left — that is why TH-01 is live and not on the desk."
+                }
+              ],
+              "desk": "Not a buy. Lifecycle: unfinished stock.",
+              "desk_fail": true
+            },
+            {
+              "id": "ST-02",
+              "kind": "stock",
+              "lifecycle": "unfinished",
+              "unfinished": true,
+              "buy": false,
+              "tags": [
+                {
+                  "label": "stock",
+                  "class": "stock"
+                },
+                {
+                  "label": "unfinished",
+                  "class": "unfinished"
+                }
+              ],
+              "title": "Power landlords (names not picked)",
+              "story": "The grid / power names people already use for the same TH-01 factor. Unfinished. Several names may be one bet. Not a buy. No ticker written — a specific name we cannot stand behind is worse than a generic card.",
+              "from": "From: CA-01 / TH-01",
+              "fields": [
+                {
+                  "label": "What it is",
+                  "text": "A stock-shaped slot spawned by CA-01. Names not picked."
+                },
+                {
+                  "label": "Why unfinished",
+                  "text": "No ticker chosen. No live price. Several names here may be one factor bet, not several bets."
+                }
+              ],
+              "desk": "Not a buy. Lifecycle: unfinished stock.",
+              "desk_fail": true
+            },
+            {
+              "id": "ST-03",
+              "kind": "stock",
+              "lifecycle": "unfinished",
+              "unfinished": true,
+              "buy": false,
+              "tags": [
+                {
+                  "label": "stock",
+                  "class": "stock"
+                },
+                {
+                  "label": "unfinished",
+                  "class": "unfinished"
+                }
+              ],
+              "title": "Permanent-magnet / rare-earth squeeze (names not picked)",
+              "story": "Generic slot under CA-02. No ticker. Not analyzed.",
+              "from": "From: CA-02 / TH-02",
+              "fields": [
+                {
+                  "label": "What it is",
+                  "text": "Generic slot under CA-02. No ticker. Not analyzed."
+                }
+              ]
+            },
+            {
+              "id": "ST-04",
+              "kind": "stock",
+              "lifecycle": "unfinished",
+              "unfinished": true,
+              "buy": false,
+              "tags": [
+                {
+                  "label": "stock",
+                  "class": "stock"
+                },
+                {
+                  "label": "unfinished",
+                  "class": "unfinished"
+                }
+              ],
+              "title": "Trailing-edge robot MCU sockets (names not picked)",
+              "story": "Generic slot under CA-02. No ticker. May be the same factor as ST-03.",
+              "from": "From: CA-02 / TH-02",
+              "fields": [
+                {
+                  "label": "What it is",
+                  "text": "Generic slot under CA-02. No ticker. May be the same factor as ST-03."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "screen",
+          "name": "Screen",
+          "class": "screen",
+          "subtitle": "after a pick is analyzed. Priced, down, up, clock, kill, thinking score. Same id moves here.",
+          "empty": "Named stocks move here once priced / down / up / clock / kill is written. A 6/10 is half-fit, not a buy.",
+          "cards": [
+            {
+              "id": "ST-05",
+              "kind": "screen",
+              "lifecycle": "screened",
+              "tags": [
+                {
+                  "label": "screen",
+                  "class": "screen"
+                },
+                {
+                  "label": "dies",
+                  "class": "dead"
+                }
+              ],
+              "title": "VEEV dies",
+              "story": "Thinking 1/10. Hang: none. dies.",
+              "from": "From: ST-05",
+              "fields": [
+                {
+                  "label": "Priced",
+                  "text": "14 Aug 2026 Yahoo last $247.25; 13 Aug close $252.63. Cap ~$40.2B. TTM P/E 43.9."
+                },
+                {
+                  "label": "Downside",
+                  "text": "Retest April low $148 is about 40% from $247."
+                },
+                {
+                  "label": "Upside",
+                  "text": "Back toward $310 is ~25%. Not desk skew."
+                },
+                {
+                  "label": "Clock",
+                  "text": "Q2 FY27 print 26 Aug 2026."
+                },
+                {
+                  "label": "Kill",
+                  "text": "26 Aug guide cut or a public Vault CRM loss."
+                },
+                {
+                  "label": "Disposition",
+                  "text": "dies"
+                }
+              ]
+            },
+            {
+              "id": "ST-06",
+              "kind": "screen",
+              "lifecycle": "screened",
+              "tags": [
+                {
+                  "label": "screen",
+                  "class": "screen"
+                },
+                {
+                  "label": "dies",
+                  "class": "dead"
+                }
+              ],
+              "title": "UMI.BR dies",
+              "story": "Thinking 2/10. Hang: none — wrong input, not magnets. dies.",
+              "from": "From: ST-06",
+              "fields": [
+                {
+                  "label": "Priced",
+                  "text": "14 Aug 2026 Euronext last €23.16. Cap ~€5.6B. Printed P/E ~11–13."
+                },
+                {
+                  "label": "Downside",
+                  "text": "Retest €12.77 is about 45%. That is the 2024 cathode bust, not a magnet kill."
+                },
+                {
+                  "label": "Upside",
+                  "text": "Street high €33 is ~40%. Not desk skew."
+                },
+                {
+                  "label": "Clock",
+                  "text": "H2 metals + year-end CAM take-or-pay. TH-02 clock does not apply."
+                },
+                {
+                  "label": "Kill",
+                  "text": "No thesis kill to inherit."
+                },
+                {
+                  "label": "Disposition",
+                  "text": "dies"
+                }
+              ]
+            },
+            {
+              "id": "ST-07",
+              "kind": "screen",
+              "lifecycle": "screened",
+              "tags": [
+                {
+                  "label": "screen",
+                  "class": "screen"
+                },
+                {
+                  "label": "dies",
+                  "class": "dead"
+                }
+              ],
+              "title": "RIVN dies",
+              "story": "Thinking 1/10. Hang: none. dies.",
+              "from": "From: ST-07",
+              "fields": [
+                {
+                  "label": "Priced",
+                  "text": "14 Aug 2026 Yahoo last $15.78; 13 Aug close $15.82. Cap $22.8B."
+                },
+                {
+                  "label": "Downside",
+                  "text": "Retest $11.84 is ~25%. Further dilution if burn stays."
+                },
+                {
+                  "label": "Upside",
+                  "text": "Back to $22.69 is ~44%. Company execution, not a live TH."
+                },
+                {
+                  "label": "Clock",
+                  "text": "None for a thesis."
+                },
+                {
+                  "label": "Kill",
+                  "text": "No thesis kill."
+                },
+                {
+                  "label": "Disposition",
+                  "text": "dies"
+                }
+              ]
+            },
+            {
+              "id": "ST-08",
+              "title": "Micron (MU) — hang is real, skew is not",
+              "story": "Thinking 8/10. Hang: TH-01 / CA-01. Memory is in the thesis kill language. They own the memory plants, not the foundry default (ST-01) and not the power slot. Honest hang. Do not invent a second thesis. Crowded/priced is the gate.",
+              "tags": [
+                {
+                  "label": "screen",
+                  "class": "screen"
+                },
+                {
+                  "label": "monitor",
+                  "class": "wait"
+                },
+                {
+                  "label": "thrown",
+                  "class": "thrown"
+                }
+              ],
+              "fields": [
+                {
+                  "label": "Priced",
+                  "text": "13 Aug close $949.83. Live 14 Aug ~$967.95 at 09:43 EDT (not a close). Cap $1.073T at the close. 52w $113.46–$1,255. YTD +233% from 31 Dec 2025 close $285.41. July scare was in the shares: 30 Jun $1,154 → 29 Jul $739 (−36% close-to-close; peak-to-trough −41%). Now $950 is +29% off the July close-trough, still −24% vs the $1,255 high. Trailing P/E ~21, trailing P/S ~12. Forward P/E 6.61 is peak-cycle earnings, not a gift. 2018 upcycle trailing P/E was 4.6–7.4. Street Strong Buy, 46 analysts, median target $1,550. BofA July FMS: semis the most crowded trade (82%). Functionally the default US memory-tight equity."
+                },
+                {
+                  "label": "Physical",
+                  "text": "Still tight. 2026 HBM sold out. FQ3: demand exceeds supply; tight beyond calendar 2027. TrendForce 3Q26 conventional DRAM still +13–18% QoQ. Capex raised to ~$27B FY26. No cancelled fab. Rate-of-increase moderating is not a kill."
+                },
+                {
+                  "label": "Downside",
+                  "text": "Retest of 29 Jul close $739 is about 22% from $950. A real TH-01 kill is a cycle-break name (2018-style), not a 10% dip. Do not write 10x down."
+                },
+                {
+                  "label": "Upside",
+                  "text": "Not 10x. 52w high $1,255 is +32% from $950. Street median $1,550 is +63%. Residual if P1 holds to Christmas. Also what 46 analysts already own."
+                },
+                {
+                  "label": "Clock",
+                  "text": "TH-01 6–12mo, overlaps P1 (bottleneck still true at Christmas). Next company print ~22–23 Sep (FQ4). TrendForce 4Q contract is the physical clock."
+                },
+                {
+                  "label": "Kill",
+                  "text": "Utilization down, rental and memory prices down, large capex cancelled. None have printed. A second share-price scare without those prints is not a kill."
+                },
+                {
+                  "label": "Disposition",
+                  "text": "MONITOR. Not Action. Hang is real. Skew is not, at $950 after +233% YTD and a half-retrace of July."
+                }
+              ],
+              "desk": "Not a buy. Same shape as WL-01: wait for both conditions.",
+              "desk_fail": false
+            },
+            {
+              "id": "ST-09",
+              "kind": "screen",
+              "lifecycle": "screened",
+              "tags": [
+                {
+                  "label": "screen",
+                  "class": "screen"
+                },
+                {
+                  "label": "dies as a hold",
+                  "class": "dead"
+                }
+              ],
+              "title": "GOOGL dies as a hold",
+              "story": "Thinking 3/10. Hang: half TH-01, wrong side (buyer). dies as a hold.",
+              "from": "From: ST-09",
+              "fields": [
+                {
+                  "label": "Priced",
+                  "text": "13 Aug close $346.36. Live 14 Aug ~$348. Cap ~$4.2T. FY26 capex $195–205B."
+                },
+                {
+                  "label": "Downside",
+                  "text": "July low $314.90 is ~9% from $346. A TH-01 kill is mixed-to-helpful for a spender."
+                },
+                {
+                  "label": "Upside",
+                  "text": "Re-rate toward $408 is ~18%. Not landlord upside."
+                },
+                {
+                  "label": "Clock",
+                  "text": "TH-01 clock does not transfer. Next print Q3."
+                },
+                {
+                  "label": "Kill",
+                  "text": "Do not inherit TH-01 kill onto a buyer."
+                },
+                {
+                  "label": "Disposition",
+                  "text": "dies as a hold"
+                }
+              ]
+            },
+            {
+              "id": "ST-10",
+              "title": "LEENO (058470.KRX) dies as a hold",
+              "story": "Thinking 4/10. Hang: none we can stand on. IC test sockets and spring probes sit between the tester and the chip. That is the test side of the factory, not the scarce plant. Not CA-01. No filing that prints HBM revenue or says socket lead times are the bottleneck. Do not invent a hang.",
+              "tags": [
+                {
+                  "label": "screen",
+                  "class": "screen"
+                },
+                {
+                  "label": "dies as a hold",
+                  "class": "dead"
+                },
+                {
+                  "label": "thrown",
+                  "class": "thrown"
+                }
+              ],
+              "fields": [
+                {
+                  "label": "Priced",
+                  "text": "KOSDAQ close 14 Aug 2026 ₩70,800 (−0.70%). Cap ₩5.396T / ~$3.83B. No US listing. 52w ₩44,100–₩129,000. YTD +17.4%. July scare was in the shares: 30 Jun ₩84,000 → 31 Jul ₩64,100 (−23.7%). Now ₩70,800 is +10% off July-end and −45% from the April high. Naver PER 33.1 / fwd 29.0. H1 2026: rev ₩243.0B (+27%), OPM 49.7%, sockets+probe card 68%. Strike in the tape (day 23). Korean AI-tech beta plus a rich socket franchise, already off the April high."
+                },
+                {
+                  "label": "Downside",
+                  "text": "Retest 30 Jul close ₩55,200 is about 22%. Retest ₩44,100 is about 38%. Strike is a company risk, not a thesis kill. No 10x collapse — 50% margins, net cash-like."
+                },
+                {
+                  "label": "Upside",
+                  "text": "Back to ₩129,000 is +82%. Mean-reversion of a beta name, not unused TH-01 skew. Do not write 10x."
+                },
+                {
+                  "label": "Clock",
+                  "text": "TH-01 clock does not transfer. Company clock is the strike and the next Korean print. Socket volumes are the only physical tell."
+                },
+                {
+                  "label": "Kill",
+                  "text": "Do not inherit TH-01’s kill onto a consumable. Dies if export mix rolls over, socket growth fails in the next print, or the strike shows up in H2 units."
+                },
+                {
+                  "label": "Disposition",
+                  "text": "DIES as a hold. Partial test-side join is not a CA-01 name. Useful later as a socket-volume print source, not a parented hold."
+                }
+              ],
+              "desk": "Not a buy. Not parented to CA-01.",
+              "desk_fail": true
+            }
+          ]
+        },
+        {
+          "id": "monitor",
+          "name": "Monitor",
+          "class": "monitor",
+          "subtitle": "waitlist. Both conditions must print.",
+          "cards": [
+            {
+              "id": "WL-01",
+              "kind": "waitlist",
+              "lifecycle": "waitlist",
+              "tags": [
+                {
+                  "label": "waitlist",
+                  "class": "wait"
+                }
+              ],
+              "title": "Watches ST-01 / ST-02. Arms only on two conditions",
+              "story": "It does not arm because the picture is true. It arms only if both conditions print on the stock names. It watches the stocks, not the expression.",
+              "from": "Watches: ST-01, ST-02. From: CA-01 / TH-01",
+              "fields": [
+                {
+                  "label": "Arms only if BOTH",
+                  "text": ""
+                },
+                {
+                  "label": "(a)",
+                  "text": "a real drawdown in the names (ST-01 / ST-02) — not a headline, a price that has already moved."
+                },
+                {
+                  "label": "(b)",
+                  "text": "factory / rental / memory prints still tight. If the prints ease, WL-01 dies with TH-01."
+                },
+                {
+                  "label": "Not written",
+                  "text": "No size. No entry until both. One condition is not enough."
+                }
+              ],
+              "desk": "Lifecycle: waitlist. Waiting is the action.",
+              "desk_fail": false
+            },
+            {
+              "id": "WL-02",
+              "title": "Watches ST-08 MU. Arms only on two conditions",
+              "story": "Hang is already written. It does not arm because the picture is true. It arms only if both conditions print on this name.",
+              "tags": [
+                {
+                  "label": "waitlist",
+                  "class": "wait"
+                }
+              ],
+              "fields": [
+                {
+                  "label": "Watches",
+                  "text": "ST-08 MU. From TH-01 / CA-01."
+                },
+                {
+                  "label": "(a)",
+                  "text": "a real second drawdown in MU — toward or through the 29 Jul close $739. A price that has already moved, not a headline."
+                },
+                {
+                  "label": "(b)",
+                  "text": "factory / rental / memory prints still tight. If the prints ease, this dies with TH-01."
+                },
+                {
+                  "label": "Not written",
+                  "text": "No size. No entry until both. One condition is not enough."
+                }
+              ],
+              "desk": "Lifecycle: waitlist. Waiting is the action.",
+              "desk_fail": false
+            }
+          ]
+        },
+        {
+          "id": "action",
+          "name": "Action",
+          "class": "action",
+          "subtitle": "conditions already met. Should act.",
+          "empty": "None. Conditions have not hit.",
+          "cards": []
+        },
+        {
+          "id": "book",
+          "name": "Book",
+          "class": "book",
+          "subtitle": "decided to act.",
+          "empty": "Nothing on the book. No execution this walk.",
+          "cards": []
+        }
+      ]
+    }
+  ]
+}
