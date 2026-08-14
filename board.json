@@ -1,4 +1,8 @@
 {
   "rev": 2,
-  "title": "Investment funnel"
+  "title": "Investment funnel",
+  "lede": "Funnel is world pictures and thesis candidates (expressions). Candidates tab is names (spawned or thrown), then Screen after analysis, then monitor / action / book. Reload for the latest walk. Shell loads board.json from GitHub raw so this page can refresh.",
+  "meta": "First walk, 14 Aug 2026. Candidates: Stocks → Screen → Monitor → Action → Book. Book is empty.",
+  "judge": "Pipe ran. Three theses, none on the desk. One thesis candidate (expression, not a name). Two unfinished stock names spawned from it. One conditional wait on those names. Working filter, not a broken engine. No live prices.",
+  "tabs": []
 }
