@@ -67,7 +67,8 @@
     align-items: start;
   }
   .pipe.funnel { grid-template-columns: 1.25fr 1.1fr 0.8fr 1fr; }
-  .pipe.candidates { grid-template-columns: 1fr 1fr 0.85fr 0.85fr; }
+  .pipe.candidates { grid-template-columns: 0.9fr 1.05fr 1fr 0.85fr 0.75fr; }
+  .col.screen h2 { background: var(--peaking); }
   .col {
     background: var(--panel);
     border-radius: 10px;
@@ -198,8 +199,8 @@
 <body>
 <header>
   <h1>Investment funnel</h1>
-  <p class="lede">Funnel is world pictures and thesis candidates (expressions). Candidates tab is actual names spawned from those expressions, then monitor / action / book. Refresh this page for the latest walk.</p>
-  <p class="meta">First walk, 14 Aug 2026. Machine ran. Nathan is an opinion, not a gate. Book is empty.</p>
+  <p class="lede">Funnel is world pictures and thesis candidates (expressions). Candidates tab is names (spawned or thrown), then Screen after analysis, then monitor / action / book. Refresh this page for the latest walk.</p>
+  <p class="meta">First walk, 14 Aug 2026. Candidates: Stocks → Screen → Monitor → Action → Book. Book is empty.</p>
 </header>
 
 <div class="tabs">
@@ -217,6 +218,7 @@
 </div>
 <div class="legend" id="candidates-legend" style="display:none">
   <span><i class="swatch" style="background:#1a3d4d"></i>Stocks</span>
+  <span><i class="swatch" style="background:#5c4a1f"></i>Screen</span>
   <span><i class="swatch" style="background:#3d3d3d"></i>Monitor</span>
   <span><i class="swatch" style="background:#1a4d2e"></i>Action</span>
   <span><i class="swatch" style="background:#2a2222"></i>Book</span>
@@ -434,7 +436,7 @@
 
   <div class="col stocks">
     <h2>Stocks</h2>
-    <p class="sub">names spawned from a thesis candidate. Not a buy.</p>
+    <p class="sub">spawned from a thesis candidate, or a name you threw. Not analyzed yet. Not a buy.</p>
 
     <article class="card">
       <div class="nid">ST-01 <span class="tag stock">stock</span> <span class="tag unfinished">unfinished</span></div>
@@ -457,6 +459,12 @@
     </article>
   </div>
 
+
+  <div class="col screen">
+    <h2>Screen</h2>
+    <p class="sub">after a pick is analyzed. Priced, down, up, clock, kill, thinking score. Same id moves here.</p>
+    <p class="empty">None this walk. ST-01 has not been screened. A name you throw (Micron, Google) lands in Stocks, then moves here once the opinion is written. A 6/10 is half-fit, not a buy.</p>
+  </div>
   <div class="col monitor">
     <h2>Monitor</h2>
     <p class="sub">waitlist. Both conditions must print.</p>
