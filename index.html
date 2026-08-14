@@ -7,7 +7,7 @@
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Investment funnel</title>
-<!-- funnel-shell rev=6 embed 2026-08-14T22:13HKT -->
+<!-- funnel-shell rev=6 pin-3b8511f 2026-08-14T22:14HKT -->
 <style>
   :root {
     --bg: #0e1116;
@@ -91,7 +91,7 @@
   <p class="meta" id="meta"></p>
   <div class="toolbar">
     <button type="button" id="reload">Reload</button>
-    <p class="meta" id="revline">embedded board</p>
+    <p class="meta" id="revline">pinned 3b8511f</p>
   </div>
 </header>
 <div class="tabs" id="tabs"></div>
@@ -101,7 +101,6 @@
 <div class="pane on" id="pane-funnel"></div>
 <div class="pane" id="pane-candidates"></div>
 <div class="judge" id="judge"></div>
-<script src="https://cdn.jsdelivr.net/gh/nathanjenk467-design/investment-funnel@c51f305bebc656d8cd83ab4b3b39049b5a729f01/board.json"></script>
 <script>
 (function () {
   function esc(s) {
@@ -207,8 +206,8 @@
   }
   function load() {
     var urls = [
-      "https://cdn.jsdelivr.net/gh/nathanjenk467-design/investment-funnel@c51f305bebc656d8cd83ab4b3b39049b5a729f01/board.json",
-      "https://raw.githack.com/nathanjenk467-design/investment-funnel/c51f305bebc656d8cd83ab4b3b39049b5a729f01/board.json"
+      "https://cdn.jsdelivr.net/gh/nathanjenk467-design/investment-funnel@3b8511f159cd64dfbd5867797e0f49a7c002de95/board.json",
+      "https://raw.githack.com/nathanjenk467-design/investment-funnel/3b8511f159cd64dfbd5867797e0f49a7c002de95/board.json"
     ];
     function one(i) {
       return fetch(urls[i], { cache: "no-store" }).then(function (r) {
@@ -217,7 +216,7 @@
       }).then(function (data) {
         if (!data || !data.tabs) throw new Error("no tabs");
         renderBoard(data);
-        document.getElementById("revline").textContent = "rev " + (data.rev || "?") + " · pinned c51f305";
+        document.getElementById("revline").textContent = "rev " + (data.rev || "?") + " · pinned 3b8511f";
       }).catch(function (err) {
         if (i + 1 < urls.length) return one(i + 1);
         fail("Could not load board. " + err.message);
