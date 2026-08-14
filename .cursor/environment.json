@@ -1,0 +1,14 @@
+{
+  "name": "Investment funnel",
+  "install": "python3 -c \"import json; [json.load(open(f)) for f in ['board.json', 'first-walk.json']]; print('board.json and first-walk.json parsed OK')\"",
+  "ports": [
+    { "name": "web", "port": 8000 }
+  ],
+  "terminals": [
+    {
+      "name": "static-server",
+      "command": "python3 -m http.server 8000 --bind 0.0.0.0",
+      "description": "Serves the static Investment funnel app (index.html) on port 8000. Open http://localhost:8000/ in a browser."
+    }
+  ]
+}
