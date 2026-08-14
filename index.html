@@ -1,1 +1,516 @@
-<PLACEHOLDER_HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Investment funnel</title>
+<!-- funnel-shell rev=5 2026-08-14T22:06HKT -->
+<style>
+  :root {
+    --bg: #0e1116;
+    --panel: #161b22;
+    --ink: #f0f3f6;
+    --muted: #b4bcc6;
+    --line: #2a313a;
+    --emerging: #1e3a5f;
+    --rising: #1a4d2e;
+    --peaking: #5c4a1f;
+    --fading: #3d3d3d;
+    --dead: #2a2222;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.45 "IBM Plex Sans", "Segoe UI", sans-serif;
+  }
+  header { padding: 14px 32px 4px; }
+  header h1 { margin: 0 0 4px; font-size: 18px; font-weight: 650; }
+  .lede {
+    max-width: none;
+    color: var(--ink);
+    font-size: 12px;
+    line-height: 1.35;
+    margin: 0 0 4px;
+  }
+  .meta { color: var(--muted); font-size: 11px; margin: 0; }
+  .toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 6px 0 0;
+  }
+  #reload {
+    background: #1a4d2e;
+    border: 1px solid #1a4d2e;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font: 12px/1.2 inherit;
+    cursor: pointer;
+  }
+  #reload:disabled { opacity: 0.55; cursor: wait; }
+  .error {
+    display: none;
+    margin: 12px 32px 0;
+    padding: 12px 14px;
+    background: #2a2222;
+    border: 1px solid #8a3a3a;
+    border-radius: 10px;
+    color: #d08a8a;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+  .error.on { display: block; }
+  .tabs { display: flex; gap: 8px; padding: 16px 32px 0; }
+  .tabs button {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--muted);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font: 13px/1.2 inherit;
+    cursor: pointer;
+  }
+  .tabs button.on {
+    background: #1a4d2e;
+    border-color: #1a4d2e;
+    color: #fff;
+  }
+  .pane { display: none; }
+  .pane.on { display: block; }
+  .legend {
+    display: flex; gap: 14px; flex-wrap: wrap;
+    padding: 12px 32px 0; color: var(--muted); font-size: 13px;
+  }
+  .swatch {
+    display: inline-block; width: 10px; height: 10px;
+    border-radius: 2px; margin-right: 6px; vertical-align: -1px;
+  }
+  .pipe {
+    display: grid;
+    gap: 12px;
+    padding: 18px 32px 8px;
+    align-items: start;
+  }
+  .pipe.funnel { grid-template-columns: 1.25fr 1.1fr 0.8fr 1fr; }
+  .pipe.candidates { grid-template-columns: 0.9fr 1.05fr 1fr 0.85fr 0.75fr; }
+  .col.screen h2 { background: var(--peaking); }
+  .col {
+    background: var(--panel);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .col h2 {
+    margin: 0 0 6px;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 6px;
+  }
+  .col .sub {
+    margin: 0 2px 10px;
+    font-size: 11px;
+    line-height: 1.35;
+    color: var(--muted);
+  }
+  .col.board h2 { background: var(--emerging); }
+  .col.theses h2 { background: var(--rising); }
+  .col.now h2 { background: var(--peaking); }
+  .col.thesis-cands h2 { background: #1a3d4d; }
+  .col.stocks h2 { background: #1a3d4d; }
+  .col.monitor h2 { background: var(--fading); }
+  .col.action h2 { background: var(--rising); }
+  .col.book h2 { background: var(--dead); }
+  .card {
+    background: #0e1116;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 12px 13px;
+    margin-bottom: 8px;
+  }
+  .card:last-child { margin-bottom: 0; }
+  .tag {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 7px;
+    border-radius: 999px;
+    border: 1px solid #5c4a1f;
+    color: #c9b27a;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 600;
+    vertical-align: 6px;
+  }
+  .tag.kind { border-color: #3d5a80; color: #9bb4d0; }
+  .tag.obs { border-color: #3d3d3d; color: #b4bcc6; }
+  .tag.live { border-color: #1a4d2e; color: #8fbf9f; }
+  .tag.held { border-color: #5c4a1f; color: #c9b27a; }
+  .tag.unfinished { border-color: #5c4a1f; color: #c9b27a; }
+  .tag.wait { border-color: #3d3d3d; color: #b4bcc6; }
+  .tag.pred { border-color: #5c4a1f; color: #c9b27a; }
+  .tag.fight { border-color: #8a3a3a; color: #d08a8a; }
+  .tag.fail { border-color: #8a3a3a; color: #d08a8a; }
+  .tag.expr { border-color: #3d5a80; color: #9bb4d0; }
+  .tag.stock { border-color: #3d5a80; color: #9bb4d0; }
+  .card .nid {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1.1;
+    margin-bottom: 4px;
+  }
+  .card .title { font-weight: 650; font-size: 16px; }
+  .card .story { margin-top: 6px; font-size: 14px; color: var(--ink); }
+  .card .force { margin-top: 8px; font-size: 13px; color: var(--muted); }
+  .card .from { margin-top: 6px; font-size: 12px; color: #8b94a0; }
+  .card .heat {
+    margin-top: 8px;
+    font-size: 11px;
+    color: #8b94a0;
+    letter-spacing: 0.03em;
+  }
+  .card .heat b { color: #c9b27a; font-weight: 650; }
+  .card.fight { border-color: #8a3a3a; }
+  .card .claim { margin-top: 6px; font-size: 14px; }
+  .card .field { margin-top: 6px; font-size: 12px; color: #8b94a0; }
+  .card .field b { color: #c9b27a; font-weight: 650; }
+  .card .desk { margin-top: 8px; font-size: 12px; color: #c9b27a; }
+  .card .desk.fail { color: #d08a8a; }
+  .card .stats { margin-top: 8px; font-size: 12px; color: #c9b27a; }
+  .empty { color: var(--muted); font-size: 13px; padding: 8px; }
+  .deadstrip {
+    margin: 10px 32px 8px;
+    background: var(--panel);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .deadstrip h2 {
+    margin: 0 0 6px;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 6px;
+    background: var(--dead);
+  }
+  .deadstrip .sub {
+    margin: 0 2px 8px;
+    font-size: 11px;
+    line-height: 1.35;
+    color: var(--muted);
+  }
+  .deadstrip .foot {
+    margin: 8px 2px 0;
+    font-size: 11px;
+    line-height: 1.35;
+    color: #8b94a0;
+  }
+  .judge {
+    display: none;
+    margin: 8px 32px 28px;
+    padding: 12px 14px;
+    background: var(--panel);
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.45;
+  }
+  .judge.on { display: block; }
+  .judge b { color: #c9b27a; font-weight: 650; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Investment funnel</h1>
+  <p class="lede" id="lede">Loading board…</p>
+  <p class="meta" id="meta"></p>
+  <div class="toolbar">
+    <button type="button" id="reload">Reload</button>
+    <p class="meta" id="revline">Fetching latest main…</p>
+  </div>
+</header>
+
+<div class="tabs" id="tabs"></div>
+<div class="legend" id="funnel-legend"></div>
+<div class="legend" id="candidates-legend" style="display:none"></div>
+<div class="error" id="error"></div>
+<div class="pane on" id="pane-funnel"></div>
+<div class="pane" id="pane-candidates"></div>
+<div class="judge" id="judge"></div>
+
+<script>
+(function () {
+  var DATA_URL = "https://raw.githubusercontent.com/nathanjenk467-design/investment-funnel/main/board.json";
+  var SHA_URL = "https://api.github.com/repos/nathanjenk467-design/investment-funnel/commits/main";
+
+  var lastBoard = null;
+  var currentPane = (location.hash === "#candidates") ? "candidates" : "funnel";
+
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function hkTime(iso) {
+    var d = iso ? new Date(iso) : new Date();
+    if (isNaN(d.getTime())) d = new Date();
+    return d.toLocaleString("en-GB", {
+      timeZone: "Asia/Hong_Kong",
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false
+    }) + " HKT";
+  }
+
+  function showError(msg) {
+    var el = document.getElementById("error");
+    el.textContent = msg;
+    el.classList.add("on");
+  }
+
+  function clearError() {
+    var el = document.getElementById("error");
+    el.textContent = "";
+    el.classList.remove("on");
+  }
+
+  function unregisterWorkers() {
+    if (!("serviceWorker" in navigator)) return;
+    navigator.serviceWorker.getRegistrations().then(function (regs) {
+      regs.forEach(function (r) { r.unregister(); });
+    }).catch(function () {});
+  }
+
+  function renderHeat(heat) {
+    if (!heat) return "";
+    var parts = [];
+    if (heat.text) parts.push(esc(heat.text));
+    if (heat.fight) parts.push("fight");
+    var html = parts.join(" · ");
+    if (heat.score != null) html += (html ? " · " : "") + "<b>" + esc(heat.score) + "</b>";
+    if (heat.note) html += " · " + esc(heat.note);
+    return html ? '<div class="heat">' + html + "</div>" : "";
+  }
+
+  function renderCard(card) {
+    var tags = (card.tags || []).map(function (t) {
+      return '<span class="tag ' + esc(t.class || "") + '">' + esc(t.label) + "</span>";
+    }).join(" ");
+    var cls = "card" + (card.fight ? " fight" : "");
+    var html = '<article class="' + cls + '">';
+    html += '<div class="nid">' + esc(card.id) + (tags ? " " + tags : "") + "</div>";
+    if (card.title) html += '<div class="title">' + esc(card.title) + "</div>";
+    if (card.story) html += '<div class="story">' + esc(card.story) + "</div>";
+    if (card.claim) html += '<div class="claim">' + esc(card.claim) + "</div>";
+    if (card.force) html += '<div class="force">' + esc(card.force) + "</div>";
+    if (card.from) html += '<div class="from">' + esc(card.from) + "</div>";
+    html += renderHeat(card.heat);
+    (card.fields || []).forEach(function (f) {
+      html += '<div class="field"><b>' + esc(f.label) + "</b>";
+      if (f.text) html += " " + esc(f.text);
+      html += "</div>";
+    });
+    if (card.stats) html += '<div class="stats">' + esc(card.stats) + "</div>";
+    if (card.desk) {
+      html += '<div class="desk' + (card.desk_fail ? " fail" : "") + '">' + esc(card.desk) + "</div>";
+    }
+    html += "</article>";
+    return html;
+  }
+
+  function renderColumn(col) {
+    var html = '<div class="col ' + esc(col.class || col.id) + '">';
+    html += "<h2>" + esc(col.name) + "</h2>";
+    if (col.subtitle) html += '<p class="sub">' + esc(col.subtitle) + "</p>";
+    var cards = col.cards || [];
+    if (!cards.length) {
+      html += '<p class="empty">' + esc(col.empty || "None.") + "</p>";
+    } else {
+      cards.forEach(function (c) { html += renderCard(c); });
+    }
+    html += "</div>";
+    return html;
+  }
+
+  function renderStrip(strip) {
+    var html = '<section class="' + esc(strip.class || "deadstrip") + '">';
+    html += "<h2>" + esc(strip.name) + "</h2>";
+    if (strip.subtitle) html += '<p class="sub">' + esc(strip.subtitle) + "</p>";
+    var cards = strip.cards || [];
+    if (!cards.length) {
+      html += '<p class="empty">' + esc(strip.empty || "None.") + "</p>";
+    } else {
+      cards.forEach(function (c) { html += renderCard(c); });
+    }
+    if (strip.foot) html += '<p class="foot">' + esc(strip.foot) + "</p>";
+    html += "</section>";
+    return html;
+  }
+
+  function renderLegend(el, tab) {
+    if (!el) return;
+    var html = "";
+    (tab.legend || []).forEach(function (item) {
+      html += '<span><i class="swatch" style="background:' + esc(item.color) + '"></i>' + esc(item.label) + "</span>";
+    });
+    if (tab.legend_note) html += "<span>" + esc(tab.legend_note) + "</span>";
+    el.innerHTML = html;
+  }
+
+  function showPane(id) {
+    currentPane = id;
+    document.querySelectorAll(".pane").forEach(function (p) {
+      p.classList.toggle("on", p.id === "pane-" + id);
+    });
+    document.querySelectorAll(".tabs button").forEach(function (b) {
+      b.classList.toggle("on", b.getAttribute("data-pane") === id);
+    });
+    var fl = document.getElementById("funnel-legend");
+    var cl = document.getElementById("candidates-legend");
+    if (fl) fl.style.display = id === "funnel" ? "flex" : "none";
+    if (cl) cl.style.display = id === "candidates" ? "flex" : "none";
+  }
+
+  function renderTabs(tabs) {
+    var host = document.getElementById("tabs");
+    host.innerHTML = "";
+    tabs.forEach(function (tab) {
+      var b = document.createElement("button");
+      b.setAttribute("data-pane", tab.id);
+      b.textContent = tab.name;
+      if (tab.id === currentPane) b.className = "on";
+      b.addEventListener("click", function () { showPane(tab.id); });
+      host.appendChild(b);
+    });
+  }
+
+  function renderBoard(data) {
+    document.title = data.title || "Investment funnel";
+    document.getElementById("lede").textContent = data.lede || "";
+    var meta = data.meta;
+    if (meta && typeof meta === "object") {
+      meta = [meta.updated, meta.rev != null ? ("rev " + meta.rev) : ""].filter(Boolean).join(" · ");
+    }
+    document.getElementById("meta").textContent = meta || "";
+
+    var tabs = data.tabs || [];
+    renderTabs(tabs);
+
+    tabs.forEach(function (tab) {
+      var pane = document.getElementById("pane-" + tab.id);
+      if (!pane) return;
+      var html = '<section class="pipe ' + esc(tab.layout || tab.id) + '">';
+      (tab.columns || []).forEach(function (col) { html += renderColumn(col); });
+      html += "</section>";
+      (tab.strips || []).forEach(function (s) { html += renderStrip(s); });
+      pane.innerHTML = html;
+      renderLegend(document.getElementById(tab.id + "-legend"), tab);
+    });
+
+    var judge = document.getElementById("judge");
+    if (data.judge) {
+      judge.innerHTML = "<b>Ops judge.</b> " + esc(data.judge);
+      judge.classList.add("on");
+    } else {
+      judge.innerHTML = "";
+      judge.classList.remove("on");
+    }
+
+    showPane(currentPane);
+  }
+
+  function fetchBoard() {
+    var url = DATA_URL + "?t=" + Date.now();
+    return fetch(url, { cache: "no-store" }).then(function (r) {
+      if (!r.ok) throw new Error("board.json HTTP " + r.status + " from GitHub raw");
+      return r.json();
+    });
+  }
+
+  function fetchSha() {
+    return fetch(SHA_URL + "?t=" + Date.now(), { cache: "no-store" }).then(function (r) {
+      if (!r.ok) throw new Error("commits/main HTTP " + r.status);
+      return r.json();
+    }).then(function (c) {
+      var sha = (c.sha || "").slice(0, 7);
+      var when = (c.commit && ((c.commit.committer && c.commit.committer.date) || (c.commit.author && c.commit.author.date))) || null;
+      return { sha: sha, when: when };
+    }).catch(function () { return null; });
+  }
+
+  function setRevLine(shaInfo, data) {
+    var bits = [];
+    if (data && data.rev != null) bits.push("rev " + data.rev);
+    if (shaInfo && shaInfo.sha) {
+      bits.push("main " + shaInfo.sha);
+      bits.push(hkTime(shaInfo.when));
+    } else {
+      bits.push("main SHA unavailable");
+      bits.push(hkTime(null));
+    }
+    document.getElementById("revline").textContent = bits.join(" · ");
+  }
+
+  function load(isReload) {
+    var btn = document.getElementById("reload");
+    btn.disabled = true;
+    btn.textContent = isReload ? "Reloading…" : "Loading…";
+    if (!lastBoard) {
+      document.getElementById("lede").textContent = "Loading board from GitHub raw…";
+    }
+    clearError();
+
+    return Promise.all([fetchBoard(), fetchSha()]).then(function (pair) {
+      var data = pair[0];
+      var shaInfo = pair[1];
+      if (!data || !data.tabs) throw new Error("board.json has no tabs");
+      lastBoard = data;
+      renderBoard(data);
+      setRevLine(shaInfo, data);
+      clearError();
+    }).catch(function (err) {
+      var msg = "Could not load board.json from GitHub raw. " + (err && err.message ? err.message : String(err)) +
+        ". This page does not keep a hardcoded copy of the cards. Fix the fetch or try Reload.";
+      showError(msg);
+      if (!lastBoard) {
+        document.getElementById("lede").textContent = "Board failed to load.";
+        document.getElementById("pane-funnel").innerHTML = "";
+        document.getElementById("pane-candidates").innerHTML = "";
+        document.getElementById("judge").classList.remove("on");
+        document.getElementById("judge").innerHTML = "";
+      }
+      if (!document.getElementById("revline").textContent || document.getElementById("revline").textContent.indexOf("Fetching") === 0) {
+        document.getElementById("revline").textContent = "reload failed · " + hkTime(null);
+      }
+    }).then(function () {
+      btn.disabled = false;
+      btn.textContent = "Reload";
+    });
+  }
+
+  unregisterWorkers();
+  document.getElementById("reload").addEventListener("click", function () {
+    load(true);
+  });
+  load(false);
+})();
+</script>
+</body>
+</html>
