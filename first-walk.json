@@ -1,0 +1,320 @@
+{
+  "walk": "first",
+  "date": "2026-08-14",
+  "title": "Investment funnel",
+  "lede": "First walk, 14 Aug 2026. Board column is Narrative's Trend board (cards + P1–P3) and a few kept observations — not narratives, and their graph has not minted kind=trend. Theses are minted here from that board. Refresh this page for the latest walk.",
+  "meta": {
+    "machine_ran": true,
+    "nathan_role": "opinion, not a gate",
+    "book": "empty",
+    "label_debt": "Board is Narrative Trend-board cards + open predictions + kept observations, not minted kind=trend, not narratives.",
+    "live_prices": false,
+    "live_risk": false,
+    "correlation_map": false
+  },
+  "columns": [
+    {
+      "id": "board",
+      "name": "Board",
+      "subtitle": "cooked Trend-board cards + open predictions + kept observations. Not narratives."
+    },
+    {
+      "id": "theses",
+      "name": "Theses",
+      "subtitle": "6–12 month pictures minted by the investment brain from the board."
+    },
+    {
+      "id": "candidates",
+      "name": "Candidates",
+      "subtitle": "possible expressions, not a buy."
+    },
+    {
+      "id": "waitlist",
+      "name": "Waitlist",
+      "subtitle": "armed only if written conditions hit."
+    },
+    {
+      "id": "book",
+      "name": "Book",
+      "subtitle": "empty."
+    }
+  ],
+  "off_the_desk_title": "Off the desk",
+  "board": [
+    {
+      "id": "15",
+      "kind": "board_card",
+      "lifecycle_on_board": "rising",
+      "heat": 14,
+      "title": "AI chip factories are still dramatically under-built",
+      "story": "The plants that make the chips were not built fast enough for the demand now hitting them. That shortage, not a China-invasion story, is still the brake. New tapes this week did not kill it. They keep running into the same wall.",
+      "force": "they did not build enough plants. Supply and demand, not political theater.",
+      "from": "the TSMC story already kept. Fed this week by All-In, Dylan Patel, Stratechery."
+    },
+    {
+      "id": "7",
+      "kind": "board_card",
+      "lifecycle_on_board": "rising",
+      "heat": 14,
+      "title": "In July the market panicked. The factories did not.",
+      "story": "AI stock prices had a crash month that felt like 2022. Gavin Baker went looking for a real-world reason and could not find one. Chips were getting easier to get, rental prices were up, memory was up, and people were using more tokens, not less. The scare was in the price of the shares. It was not in the plants.",
+      "force": "the share price and the factory can point opposite ways. Read both.",
+      "from": "Gavin Baker, Invest Like the Best, 4 Aug. MSM: FT Alphaville, BBC, and the FSB ran the July \u201cAI bubble\u201d scare."
+    },
+    {
+      "id": "16",
+      "kind": "board_card",
+      "lifecycle_on_board": "rising",
+      "heat": 14,
+      "title": "Compute is getting dearer, and old cards still earn",
+      "story": "Useful intelligence is getting more expensive, not cheaper. An H100 is worth more today than three years ago. When a model got ten times cheaper, people used it thirteen times more. A six-year write-off looks wrong because the cards stay in the money long after the accountant is done with them.",
+      "force": "more demand for the same scarce machines, and the machines last.",
+      "from": "the compute-dearer story already kept. Enforced this week by Atallah, Dylan Patel, Stratechery."
+    },
+    {
+      "id": "1",
+      "kind": "board_card",
+      "lifecycle_on_board": "rising",
+      "heat": 14,
+      "title": "The money is going to the plants, not the next model",
+      "story": "Google is putting cash into data-center plants, not into the next model. Inside the company the cloud team wants to rent those chips out, and the model team wants the same chips to train. The chips are winning.",
+      "force": "capital follows the scarce physical thing (plants, power, chips), not the research team.",
+      "from": "All-In 8 Aug (Friedberg, Gerstner). Stratechery: Google the capital company."
+    },
+    {
+      "id": "6",
+      "kind": "board_card",
+      "lifecycle_on_board": "emerging",
+      "heat": 14,
+      "title": "Ordinary funding may be exhausted. That is why they are lending to themselves.",
+      "story": "The plants and the labs need more cash than earnings, banks, and ordinary borrowing can cover. That claim still needs proof. If it is true, they have to invent other money: chip sellers lending to their own buyers, Nvidia reaching into insurance and pension money, the same dollars going around the same few companies and getting counted as revenue. Circular funding and the debt pile are what you do when the normal tap is dry. The BIS has already said the biggest cloud companies are spending faster than they earn. That is a start, not a close.",
+      "force": "if ordinary money is exhausted, the stack starts lending to itself. Prove the exhaustion, not the weirdness.",
+      "from": "the board frame. All-In (Gurley circular). Stratechery 11 Aug Nvidia\u2019s risky business. Gavin Baker on credit wrappers. BIS on hyperscaler spend vs cash.",
+      "note": "Sits next to prediction P2. No fourth thesis minted this walk."
+    },
+    {
+      "id": "11",
+      "kind": "board_card",
+      "lifecycle_on_board": "emerging",
+      "heat": 13,
+      "tags": [
+        "fight"
+      ],
+      "title": "Power is the problem. Nobody agrees what happens next.",
+      "story": "Everyone serious now says intelligence will hit a wall made of electricity. That part is shared. The fight is about the future. One camp says China will add far more power than America next year, so energy stays the limit. Another camp says you can build power, and the real 2030 bind is the rarest machines that make the chips. A third camp says put the plants in space, because on the ground you cannot get a permit. These cannot all be right about what happens next.",
+      "force": "the problem is agreed. The path and the fix are not. The world will pick by what actually fails first.",
+      "from": "Vishria 11 Aug. Dylan Patel 13 Mar. Dwarkesh Elon 5 Feb. Stratechery SpaceX IPO."
+    },
+    {
+      "id": "10",
+      "kind": "board_card",
+      "lifecycle_on_board": "emerging",
+      "heat": 11,
+      "title": "China is locking the ugly supply chains",
+      "story": "China stopped exporting research monkeys. Prices jumped, US labs ran short. It already refines most rare earths and is moving to own the robots that run the mines, not just the rocks. In the Iran oil shock it quietly cut imports from stockpiles the West cannot see. The FCC just swept robot vacuums and humanoids onto a national-security import list. Each of these is an input the West did not build a second source for.",
+      "force": "whoever owns the unglamorous input can turn it off.",
+      "from": "ChinaTalk 14 Jul\u201313 Aug (monkeys, minerals, oil, FCC robots)."
+    },
+    {
+      "id": "18",
+      "kind": "board_card",
+      "lifecycle_on_board": "emerging",
+      "heat": 11,
+      "title": "The payment system has not caught up to the model",
+      "story": "Intelligence is getting expensive. The rails that pay for it are still yesterday\u2019s rails. Stripe talks about software agents that need to pay for things. A payments founder says the banker in your pocket is coming and is not here. This is not a crypto-price story. It is that the model and the payment have not joined up.",
+      "force": "the old money system has not caught up to who should pay, or how.",
+      "from": "Founders 2 Aug Micky Malka. Stripe / Collison."
+    },
+    {
+      "id": "P1",
+      "kind": "prediction",
+      "lifecycle": "open",
+      "title": "The chip factories will still be the bottleneck at Christmas, even if the stocks crash again",
+      "story": "The plants that make AI chips were not built fast enough. That is why computers for intelligence are expensive, and why a three-year-old chip still earns money. In July the newspapers and the stock market had a panic. A fund manager went looking for a factory reason and could not find one. The scare was in the share price. It was not in the factories.",
+      "call": "By 31 December 2026 that is still true. The wait for a new chip, and the price to rent one, will still be tight or tighter.",
+      "wrong_if": "the wait gets easy and rents collapse, while everyone is still talking about AI.",
+      "how_sure": 4,
+      "how_big_if_true": 5,
+      "call_by": "2026-12-31",
+      "note": "Evidence for TH-01. Not a second thesis."
+    },
+    {
+      "id": "P2",
+      "kind": "prediction",
+      "lifecycle": "open",
+      "title": "If ordinary money is exhausted, one of these alternative deals will break in public within a year",
+      "story": "If the usual funding is exhausted, companies are no longer just paying cash. Chip sellers are lending to their own buyers. Nvidia is reaching into insurance money and pension money. The same dollars go around the same few companies and get counted as revenue. That can look like a boom on paper while the cash never came from a real customer.",
+      "call": "Before 14 August 2027, one of these loans or insurance deals will blow up, get rewritten, or show up in a newspaper with a real company name on it. A podcast complaining about circular money is not enough.",
+      "wrong_if": "a year from now the plants are still being paid with ordinary cash, and the strange paper is gone.",
+      "how_sure": 3,
+      "how_big_if_true": 5,
+      "call_by": "2027-08-14",
+      "note": "Sits next to board card 6. Not minted as a thesis this walk."
+    },
+    {
+      "id": "P3",
+      "kind": "prediction",
+      "lifecycle": "open",
+      "title": "OpenAI and Anthropic will still take the money. Cheap models will take the usage.",
+      "story": "There are two markets now, and they are not the same. The two best labs can still charge for the model itself. Everyone a year behind can only charge for computers and consulting. Cheap and Chinese open models already do most of the everyday work. Money and usage have split.",
+      "call": "A year from now that split is still there. The expensive labs still collect most of the dollars. The cheap models still do most of the work.",
+      "wrong_if": "a cheap model starts collecting the dollars too, or the expensive labs lose the dollar pile.",
+      "how_sure": 4,
+      "how_big_if_true": 4,
+      "call_by": "2027-08-14",
+      "note": "Priced / capture question. Not a new desk item."
+    },
+    {
+      "id": "OB-01",
+      "kind": "observation",
+      "title": "China catching up in trailing-edge robotics semiconductors",
+      "story": "More than 300 Chinese auto and industrial chip suppliers are on the trailing-edge nodes that robots actually use. NXP and Infineon share is fading in those sockets. This is not a leading-edge TSMC story.",
+      "force": "the chips inside robots are older nodes, and China is filling that shelf.",
+      "from": "kept observation. SemiAnalysis, 11 Mar 2025."
+    },
+    {
+      "id": "OB-02",
+      "kind": "observation",
+      "title": "Unitree G1 at $16K against a ~$100K Western humanoid",
+      "story": "Unitree is selling a G1 near $16,000. Western humanoids are still talked about near $100,000. UBTech is targeting about 1,000 units. Price and shipment talk, not a proven Western displacement.",
+      "force": "the cheap unit is already a product. The expensive unit is still a plan.",
+      "from": "kept observation. SemiAnalysis."
+    },
+    {
+      "id": "OB-03",
+      "kind": "observation",
+      "title": "China holds about 90% of permanent magnets",
+      "story": "China still refines and makes most of the permanent magnets a motor needs. A Made-in-USA label after substantial transformation does not create a second magnet mine.",
+      "force": "the magnet is the input. Assembly is not a substitute.",
+      "from": "kept observation. SemiAnalysis."
+    }
+  ],
+  "theses": [
+    {
+      "id": "TH-01",
+      "kind": "thesis",
+      "lifecycle": "live",
+      "on_desk": false,
+      "title": "The plants are still the scarce thing, and July\u2019s scare was in the shares",
+      "claim": "The factories that make the chips were not built fast enough for the demand now hitting them. That shortage is still the brake. In July the shares panicked and the factories did not: chips were getting easier to get, rental and memory prices were up, and token use was up. Capital is already moving toward the plants, not the next model. The 6–12 month picture is that the physical thing stays scarce, and that July was a price event, not a factory event.",
+      "from_board": [
+        "15",
+        "7",
+        "16",
+        "1"
+      ],
+      "related_predictions": [
+        "P1"
+      ],
+      "clock": "6–12 months. Call window overlaps P1 (bottleneck still true at Christmas).",
+      "kill": "utilization down, rental and memory prices down, large capex cancelled. A second share-price scare without those prints is not a kill.",
+      "priced": "July already ran the bubble scare. If that scare has faded, some of this is back in the price. Not checked against a tape. No live prices on this walk.",
+      "skew": "The honest side is long the scarce physical thing. Equity names that everyone already uses for this view (the foundry, the obvious power names) may have no skew left. That is why this is live and not on the desk.",
+      "desk": "not on desk — priced-in not checked; default expressions look crowded"
+    },
+    {
+      "id": "TH-02",
+      "kind": "thesis",
+      "lifecycle": "live",
+      "on_desk": false,
+      "title": "China already owns the ugly inputs Western robots need",
+      "claim": "China stopped the monkeys, holds the rare earths and about 90% of the permanent magnets, is filling the trailing-edge MCU sockets robots actually use, and is already shipping a cheap humanoid unit. The West did not build a second source for the unglamorous inputs. That is one situation: the input is already theirs. It is not a claim that a US-listed humanoid works, or that a Western robot company is the way to hold it.",
+      "from_board": [
+        "10",
+        "OB-01",
+        "OB-02",
+        "OB-03"
+      ],
+      "clock": "6–12 months",
+      "kill": "magnet export relief plus a real Western second source, or Chinese humanoid shipments fail in public numbers.",
+      "priced": "not checked. No tape on this walk.",
+      "skew": "The obvious long — a US-listed humanoid — is the expensive side of the same fact. The input / squeeze side is the real expression and is unfinished. No written instrument yet.",
+      "desk": "not on desk — no written expression with skew yet"
+    },
+    {
+      "id": "TH-03",
+      "kind": "thesis",
+      "lifecycle": "live",
+      "on_desk": false,
+      "title": "The model can spend. The payment rail cannot.",
+      "claim": "Intelligence is getting expensive. The rails that pay for it are still yesterday\u2019s rails. Stripe talks about agents that need to pay. Malka\u2019s point is that the banker in your pocket is coming and is not here. The model and the payment have not joined up. That is the situation. It is not a crypto-price story, and it is not a claim that a new payments winner already exists.",
+      "from_board": [
+        "18"
+      ],
+      "related_predictions": [
+        "P3"
+      ],
+      "clock": "6–12 months",
+      "kill": "agents stay demos; existing rails (Visa, Stripe, banks) absorb the traffic without a new winner.",
+      "priced": "\u201cAI payments\u201d is an easy story and is probably in several names already. Not checked live.",
+      "skew": "On the obvious names this looks like 10%, not 10x, unless a cheap specific expression appears. That is a failed skew gate, not a dead picture.",
+      "desk": "failed skew gate — not enough asymmetry on the obvious names"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "CA-01",
+      "kind": "candidate",
+      "lifecycle": "candidate",
+      "unfinished": true,
+      "buy": false,
+      "title": "Plant-and-power landlords as an expression of TH-01",
+      "object": "TSM and the power names people already use, as a way to hold \u201cthe plants are still the scarce thing.\u201d If the factory prints stay tight, this is how TH-01 would be expressed in stocks Nathan can hold. It is not a buy.",
+      "what_it_is": "The same object as WL-01, without the trigger. A picture with a stock-shaped shape. Still not a buy.",
+      "why_unfinished": "No live price. No written skew math. Several names here may be one factor bet. July\u2019s scare was not marked against a tape, so there is no entry number.",
+      "clock_kill": "inherits TH-01 — utilization, rents, memory, cancelled capex.",
+      "thesis": "TH-01",
+      "waitlist": "WL-01",
+      "note": "Nathan may pick into his personal book; that pick does not score the machine."
+    }
+  ],
+  "waitlist": [
+    {
+      "id": "WL-01",
+      "kind": "waitlist",
+      "lifecycle": "waitlist",
+      "title": "Same plant expression, armed only on two conditions",
+      "object": "The same CA-01 object — TSM and the power names. It does not arm because the picture is true. It arms only if both conditions print.",
+      "arms_only_if_both": [
+        "a real drawdown in the plant/power names — not a headline, a price that has already moved",
+        "factory / rental / memory prints still tight. If the prints ease, WL-01 dies with TH-01."
+      ],
+      "size": null,
+      "entry": null,
+      "note": "No size. No entry until both. One condition is not enough.",
+      "candidate": "CA-01",
+      "thesis": "TH-01"
+    }
+  ],
+  "book": [],
+  "off_the_desk": [
+    {
+      "id": "TH-01",
+      "kind": "held",
+      "gate": "priced-in",
+      "title": "Priced-in not checked; crowded default expressions",
+      "reason": "The plant picture is live. It does not sit on the desk. July\u2019s scare was not checked against a tape, and the names people already use for this view look crowded."
+    },
+    {
+      "id": "TH-02",
+      "kind": "held",
+      "gate": "no expression",
+      "title": "No expression with written skew",
+      "reason": "The input picture is live. There is no written way to hold the squeeze side. A US-listed humanoid would be the expensive side of the same fact."
+    },
+    {
+      "id": "TH-03",
+      "kind": "held",
+      "gate": "skew",
+      "failed_skew": true,
+      "title": "Failed skew — upside looks thin versus the work",
+      "reason": "The rail gap is a real situation. On the names that already carry \u201cAI payments,\u201d the upside looks like a small re-rating, not an asymmetric hold."
+    }
+  ],
+  "judge": {
+    "pass": "first",
+    "notes": [
+      "Pipe ran. Three theses, none on the desk, one unfinished candidate, one conditional wait. Working filter, not a broken engine. No live prices."
+    ]
+  }
+}
