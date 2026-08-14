@@ -35,6 +35,23 @@
     margin: 0 0 4px;
   }
   .meta { color: var(--muted); font-size: 11px; margin: 0; }
+  .tabs { display: flex; gap: 8px; padding: 16px 32px 0; }
+  .tabs button {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--muted);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font: 13px/1.2 inherit;
+    cursor: pointer;
+  }
+  .tabs button.on {
+    background: #1a4d2e;
+    border-color: #1a4d2e;
+    color: #fff;
+  }
+  .pane { display: none; }
+  .pane.on { display: block; }
   .legend {
     display: flex; gap: 14px; flex-wrap: wrap;
     padding: 12px 32px 0; color: var(--muted); font-size: 13px;
@@ -45,11 +62,12 @@
   }
   .pipe {
     display: grid;
-    grid-template-columns: 1.35fr 1.15fr 0.95fr 0.95fr 0.7fr;
     gap: 12px;
     padding: 18px 32px 8px;
     align-items: start;
   }
+  .pipe.funnel { grid-template-columns: 1.25fr 1.1fr 0.8fr 1fr; }
+  .pipe.candidates { grid-template-columns: 1fr 1fr 0.85fr 0.85fr; }
   .col {
     background: var(--panel);
     border-radius: 10px;
@@ -72,8 +90,11 @@
   }
   .col.board h2 { background: var(--emerging); }
   .col.theses h2 { background: var(--rising); }
-  .col.candidates h2 { background: #1a3d4d; }
-  .col.waitlist h2 { background: var(--fading); }
+  .col.now h2 { background: var(--peaking); }
+  .col.thesis-cands h2 { background: #1a3d4d; }
+  .col.stocks h2 { background: #1a3d4d; }
+  .col.monitor h2 { background: var(--fading); }
+  .col.action h2 { background: var(--rising); }
   .col.book h2 { background: var(--dead); }
   .card {
     background: #0e1116;
@@ -105,6 +126,8 @@
   .tag.pred { border-color: #5c4a1f; color: #c9b27a; }
   .tag.fight { border-color: #8a3a3a; color: #d08a8a; }
   .tag.fail { border-color: #8a3a3a; color: #d08a8a; }
+  .tag.expr { border-color: #3d5a80; color: #9bb4d0; }
+  .tag.stock { border-color: #3d5a80; color: #9bb4d0; }
   .card .nid {
     font-size: 26px;
     font-weight: 700;
@@ -131,13 +154,13 @@
   .card .desk.fail { color: #d08a8a; }
   .card .stats { margin-top: 8px; font-size: 12px; color: #c9b27a; }
   .empty { color: var(--muted); font-size: 13px; padding: 8px; }
-  .offdesk {
+  .deadstrip {
     margin: 10px 32px 8px;
     background: var(--panel);
     border-radius: 10px;
     padding: 10px;
   }
-  .offdesk h2 {
+  .deadstrip h2 {
     margin: 0 0 6px;
     font-size: 12px;
     letter-spacing: 0.08em;
@@ -145,19 +168,19 @@
     color: #fff;
     padding: 8px 10px;
     border-radius: 6px;
-    background: var(--peaking);
+    background: var(--dead);
   }
-  .offdesk .sub {
-    margin: 0 2px 10px;
+  .deadstrip .sub {
+    margin: 0 2px 8px;
     font-size: 11px;
     line-height: 1.35;
     color: var(--muted);
   }
-  .offdesk-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 12px;
-    align-items: start;
+  .deadstrip .foot {
+    margin: 8px 2px 0;
+    font-size: 11px;
+    line-height: 1.35;
+    color: #8b94a0;
   }
   .judge {
     margin: 8px 32px 28px;
@@ -175,25 +198,37 @@
 <body>
 <header>
   <h1>Investment funnel</h1>
-  <p class="lede">First walk, 14 Aug 2026. Board column is Narrative's Trend board (cards + P1–P3) and a few kept observations — not narratives, and their graph has not minted kind=trend. Theses are minted here from that board. Refresh this page for the latest walk.</p>
-  <p class="meta">Machine ran. Nathan is an opinion, not a gate. Book is empty.</p>
+  <p class="lede">Funnel is world pictures and thesis candidates (expressions). Candidates tab is actual names spawned from those expressions, then monitor / action / book. Refresh this page for the latest walk.</p>
+  <p class="meta">First walk, 14 Aug 2026. Machine ran. Nathan is an opinion, not a gate. Book is empty.</p>
 </header>
 
-<div class="legend">
-  <span><i class="swatch" style="background:#1e3a5f"></i>Board</span>
-  <span><i class="swatch" style="background:#1a4d2e"></i>Theses</span>
-  <span><i class="swatch" style="background:#1a3d4d"></i>Candidates</span>
-  <span><i class="swatch" style="background:#3d3d3d"></i>Waitlist</span>
-  <span><i class="swatch" style="background:#2a2222"></i>Book</span>
-  <span><i class="swatch" style="background:#5c4a1f"></i>Off the desk</span>
-  <span>labels: board card · prediction · observation · live · unfinished · held</span>
+<div class="tabs">
+  <button class="on" data-pane="funnel">Funnel</button>
+  <button data-pane="candidates">Candidates</button>
 </div>
 
-<section class="pipe">
+<div class="legend" id="funnel-legend">
+  <span><i class="swatch" style="background:#1e3a5f"></i>Board</span>
+  <span><i class="swatch" style="background:#1a4d2e"></i>Theses 6–12 months</span>
+  <span><i class="swatch" style="background:#5c4a1f"></i>Theses now</span>
+  <span><i class="swatch" style="background:#1a3d4d"></i>Thesis candidates</span>
+  <span><i class="swatch" style="background:#2a2222"></i>Dead / parked</span>
+  <span>labels: board card · prediction · observation · live · expression</span>
+</div>
+<div class="legend" id="candidates-legend" style="display:none">
+  <span><i class="swatch" style="background:#1a3d4d"></i>Stocks</span>
+  <span><i class="swatch" style="background:#3d3d3d"></i>Monitor</span>
+  <span><i class="swatch" style="background:#1a4d2e"></i>Action</span>
+  <span><i class="swatch" style="background:#2a2222"></i>Book</span>
+  <span>labels: unfinished · waitlist</span>
+</div>
+
+<div class="pane on" id="pane-funnel">
+<section class="pipe funnel">
 
   <div class="col board">
     <h2>Board</h2>
-    <p class="sub">cooked Trend-board cards + open predictions + kept observations. Not narratives.</p>
+    <p class="sub">cooked Trend-board cards + P1–P3 + OB-01/02/03. Not narratives.</p>
 
     <article class="card">
       <div class="nid">15 <span class="tag kind">board card</span></div>
@@ -320,8 +355,8 @@
   </div>
 
   <div class="col theses">
-    <h2>Theses</h2>
-    <p class="sub">6–12 month pictures minted by the investment brain from the board.</p>
+    <h2>Theses 6–12 months</h2>
+    <p class="sub">forward pictures minted from the board. Not already moving the world.</p>
 
     <article class="card">
       <div class="nid">TH-01 <span class="tag live">live</span></div>
@@ -360,77 +395,120 @@
     </article>
   </div>
 
-  <div class="col candidates">
-    <h2>Candidates</h2>
-    <p class="sub">possible expressions, not a buy.</p>
+  <div class="col now">
+    <h2>Theses now</h2>
+    <p class="sub">dominating / rising / peaking in the world right now. Not a 6–12 month bet.</p>
+    <p class="empty">None minted this walk. A now-thesis is already moving the world; it is not a forward picture.</p>
+  </div>
+
+  <div class="col thesis-cands">
+    <h2>Thesis candidates</h2>
+    <p class="sub">expressions of a live thesis. Not a name. Not a buy. Spawns stock rows.</p>
 
     <article class="card">
-      <div class="nid">CA-01 <span class="tag unfinished">unfinished</span> <span class="tag kind">candidate</span></div>
-      <div class="title">Plant-and-power landlords as an expression of TH-01</div>
-      <div class="story">TSM and the power names people already use, as a way to hold “the plants are still the scarce thing.” If the factory prints stay tight, this is how TH-01 would be expressed in stocks Nathan can hold. It is not a buy.</div>
-      <div class="field"><b>What it is</b> The same object as WL-01, without the trigger. A picture with a stock-shaped shape. Still not a buy.</div>
-      <div class="field"><b>Why unfinished</b> No live price. No written skew math. Several names here may be one factor bet. July’s scare was not marked against a tape, so there is no entry number.</div>
+      <div class="nid">CA-01 <span class="tag expr">expression</span> <span class="tag unfinished">unfinished</span></div>
+      <div class="title">Plant-and-power landlords</div>
+      <div class="story">An expression of TH-01, not a stock. The way to hold “the plants are still the scarce thing” is to sit with the people who own the scarce physical thing — the foundry, the power landlords. This card is that picture. It is not a ticker. It will spawn stock rows on the Candidates tab.</div>
+      <div class="from">From: TH-01</div>
+      <div class="field"><b>What it is</b> A thesis candidate. A shape for how TH-01 would be held, before any name is screened.</div>
+      <div class="field"><b>What it is not</b> A stock. A buy. A price.</div>
+      <div class="field"><b>Why unfinished</b> No live prices on the names it would spawn. No written skew. Several names may be one factor bet. July’s scare was not marked against a tape.</div>
       <div class="field"><b>Clock / kill</b> inherits TH-01 — utilization, rents, memory, cancelled capex.</div>
-      <div class="desk fail">Not a buy. Lifecycle: candidate. Unfinished.</div>
+      <div class="field"><b>Spawns</b> ST-01, ST-02 on the Candidates tab.</div>
+      <div class="desk fail">Not a buy. Lifecycle: thesis candidate. Unfinished.</div>
     </article>
   </div>
 
-  <div class="col waitlist">
-    <h2>Waitlist</h2>
-    <p class="sub">armed only if written conditions hit.</p>
+</section>
+
+<section class="deadstrip">
+  <h2>Dead / parked</h2>
+  <p class="sub">killed or parked pictures. Held / off-desk is not dead.</p>
+  <p class="empty">None this walk.</p>
+  <p class="foot">Off the desk is not a column. Desk decisions sit on each TH card.</p>
+</section>
+</div>
+
+<div class="pane" id="pane-candidates">
+<section class="pipe candidates">
+
+  <div class="col stocks">
+    <h2>Stocks</h2>
+    <p class="sub">names spawned from a thesis candidate. Not a buy.</p>
+
+    <article class="card">
+      <div class="nid">ST-01 <span class="tag stock">stock</span> <span class="tag unfinished">unfinished</span></div>
+      <div class="title">Taiwan Semiconductor (TSM)</div>
+      <div class="story">The default name people already use for the foundry side of TH-01. Unfinished. No live price. May be crowded. Not a buy.</div>
+      <div class="from">From: CA-01 / TH-01</div>
+      <div class="field"><b>What it is</b> A stock name spawned by CA-01. Not screened.</div>
+      <div class="field"><b>Why unfinished</b> No live price. No written skew. The default name may already have no skew left — that is why TH-01 is live and not on the desk.</div>
+      <div class="desk fail">Not a buy. Lifecycle: unfinished stock.</div>
+    </article>
+
+    <article class="card">
+      <div class="nid">ST-02 <span class="tag stock">stock</span> <span class="tag unfinished">unfinished</span></div>
+      <div class="title">Power landlords (names not picked)</div>
+      <div class="story">The grid / power names people already use for the same TH-01 factor. Unfinished. Several names may be one bet. Not a buy. No ticker written — a specific name we cannot stand behind is worse than a generic card.</div>
+      <div class="from">From: CA-01 / TH-01</div>
+      <div class="field"><b>What it is</b> A stock-shaped slot spawned by CA-01. Names not picked.</div>
+      <div class="field"><b>Why unfinished</b> No ticker chosen. No live price. Several names here may be one factor bet, not several bets.</div>
+      <div class="desk fail">Not a buy. Lifecycle: unfinished stock.</div>
+    </article>
+  </div>
+
+  <div class="col monitor">
+    <h2>Monitor</h2>
+    <p class="sub">waitlist. Both conditions must print.</p>
 
     <article class="card">
       <div class="nid">WL-01 <span class="tag wait">waitlist</span></div>
-      <div class="title">Same plant expression, armed only on two conditions</div>
-      <div class="story">The same CA-01 object — TSM and the power names. It does not arm because the picture is true. It arms only if both conditions print.</div>
+      <div class="title">Watches ST-01 / ST-02. Arms only on two conditions</div>
+      <div class="story">It does not arm because the picture is true. It arms only if both conditions print on the stock names. It watches the stocks, not the expression.</div>
+      <div class="from">Watches: ST-01, ST-02. From: CA-01 / TH-01</div>
       <div class="field"><b>Arms only if BOTH</b></div>
-      <div class="field"><b>(a)</b> a real drawdown in the plant/power names — not a headline, a price that has already moved.</div>
+      <div class="field"><b>(a)</b> a real drawdown in the names (ST-01 / ST-02) — not a headline, a price that has already moved.</div>
       <div class="field"><b>(b)</b> factory / rental / memory prints still tight. If the prints ease, WL-01 dies with TH-01.</div>
       <div class="field"><b>Not written</b> No size. No entry until both. One condition is not enough.</div>
       <div class="desk">Lifecycle: waitlist. Waiting is the action.</div>
     </article>
   </div>
 
+  <div class="col action">
+    <h2>Action</h2>
+    <p class="sub">conditions already met. Should act.</p>
+    <p class="empty">None. Conditions have not hit.</p>
+  </div>
+
   <div class="col book">
     <h2>Book</h2>
-    <p class="sub">empty.</p>
-    <p class="empty">Nothing on the book. First walk is a filter, not a purchase.</p>
+    <p class="sub">decided to act.</p>
+    <p class="empty">Nothing on the book. No execution this walk.</p>
   </div>
 
 </section>
-
-<section class="offdesk">
-  <h2>Off the desk</h2>
-  <p class="sub">Filtered, held, or failed the desk. Same thesis ids — not a second set of cards.</p>
-  <div class="offdesk-row">
-
-    <article class="card">
-      <div class="nid">TH-01 <span class="tag held">held</span></div>
-      <div class="title">Priced-in not checked; crowded default expressions</div>
-      <div class="story">The plant picture is live. It does not sit on the desk. July’s scare was not checked against a tape, and the names people already use for this view look crowded.</div>
-      <div class="force">Gate: priced-in. Default expressions fail the crowd test.</div>
-    </article>
-
-    <article class="card">
-      <div class="nid">TH-02 <span class="tag held">held</span></div>
-      <div class="title">No expression with written skew</div>
-      <div class="story">The input picture is live. There is no written way to hold the squeeze side. A US-listed humanoid would be the expensive side of the same fact.</div>
-      <div class="force">Gate: no expression. Skew not written.</div>
-    </article>
-
-    <article class="card">
-      <div class="nid">TH-03 <span class="tag held">held</span> <span class="tag fail">failed skew</span></div>
-      <div class="title">Failed skew — upside looks thin versus the work</div>
-      <div class="story">The rail gap is a real situation. On the names that already carry “AI payments,” the upside looks like a small re-rating, not an asymmetric hold.</div>
-      <div class="force">Gate: skew. Failed.</div>
-    </article>
-
-  </div>
-</section>
-
-<div class="judge">
-  <b>Ops judge.</b> Pipe ran. Three theses, none on the desk, one unfinished candidate, one conditional wait. Working filter, not a broken engine. No live prices.
 </div>
 
+<div class="judge">
+  <b>Ops judge.</b> Pipe ran. Three theses, none on the desk. One thesis candidate (expression, not a name). Two unfinished stock names spawned from it. One conditional wait on those names. Working filter, not a broken engine. No live prices.
+</div>
+
+<script>
+(function () {
+  var tabs = document.querySelectorAll('.tabs button');
+  function show(id) {
+    document.querySelectorAll('.pane').forEach(function (p) { p.classList.toggle('on', p.id === 'pane-' + id); });
+    tabs.forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-pane') === id); });
+    var fl = document.getElementById('funnel-legend');
+    var cl = document.getElementById('candidates-legend');
+    if (fl) fl.style.display = id === 'funnel' ? 'flex' : 'none';
+    if (cl) cl.style.display = id === 'candidates' ? 'flex' : 'none';
+  }
+  tabs.forEach(function (b) {
+    b.addEventListener('click', function () { show(b.getAttribute('data-pane')); });
+  });
+  if (location.hash === '#candidates') show('candidates');
+})();
+</script>
 </body>
 </html>

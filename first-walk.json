@@ -2,7 +2,7 @@
   "walk": "first",
   "date": "2026-08-14",
   "title": "Investment funnel",
-  "lede": "First walk, 14 Aug 2026. Board column is Narrative's Trend board (cards + P1–P3) and a few kept observations — not narratives, and their graph has not minted kind=trend. Theses are minted here from that board. Refresh this page for the latest walk.",
+  "lede": "Funnel is world pictures and thesis candidates (expressions). Candidates tab is actual names spawned from those expressions, then monitor / action / book. Refresh this page for the latest walk.",
   "meta": {
     "machine_ran": true,
     "nathan_role": "opinion, not a gate",
@@ -12,34 +12,78 @@
     "live_risk": false,
     "correlation_map": false
   },
-  "columns": [
+  "tabs": [
     {
-      "id": "board",
-      "name": "Board",
-      "subtitle": "cooked Trend-board cards + open predictions + kept observations. Not narratives."
-    },
-    {
-      "id": "theses",
-      "name": "Theses",
-      "subtitle": "6–12 month pictures minted by the investment brain from the board."
+      "id": "funnel",
+      "name": "Funnel",
+      "default": true,
+      "purpose": "world pictures and thesis candidates (expressions)"
     },
     {
       "id": "candidates",
       "name": "Candidates",
-      "subtitle": "possible expressions, not a buy."
-    },
-    {
-      "id": "waitlist",
-      "name": "Waitlist",
-      "subtitle": "armed only if written conditions hit."
-    },
-    {
-      "id": "book",
-      "name": "Book",
-      "subtitle": "empty."
+      "default": false,
+      "purpose": "actual names spawned from those expressions, then monitor / action / book"
     }
   ],
-  "off_the_desk_title": "Off the desk",
+  "funnel": {
+    "columns": [
+      {
+        "id": "board",
+        "name": "Board",
+        "subtitle": "cooked Trend-board cards + P1–P3 + OB-01/02/03. Not narratives."
+      },
+      {
+        "id": "theses_6_12",
+        "name": "Theses 6–12 months",
+        "subtitle": "forward pictures minted from the board. Not already moving the world."
+      },
+      {
+        "id": "theses_now",
+        "name": "Theses now",
+        "subtitle": "dominating / rising / peaking in the world right now. Not a 6–12 month bet.",
+        "empty": "None minted this walk. A now-thesis is already moving the world; it is not a forward picture."
+      },
+      {
+        "id": "thesis_candidates",
+        "name": "Thesis candidates",
+        "subtitle": "expressions of a live thesis. Not a name. Not a buy. Spawns stock rows."
+      }
+    ],
+    "dead_parked": {
+      "title": "Dead / parked",
+      "subtitle": "killed or parked pictures. Held / off-desk is not dead.",
+      "items": [],
+      "empty": "None this walk.",
+      "off_the_desk_note": "Off the desk is not a column. Desk decisions sit on each TH card."
+    }
+  },
+  "candidates_tab": {
+    "columns": [
+      {
+        "id": "stocks",
+        "name": "Stocks",
+        "subtitle": "names spawned from a thesis candidate. Not a buy."
+      },
+      {
+        "id": "monitor",
+        "name": "Monitor",
+        "subtitle": "waitlist. Both conditions must print."
+      },
+      {
+        "id": "action",
+        "name": "Action",
+        "subtitle": "conditions already met. Should act.",
+        "empty": "None. Conditions have not hit."
+      },
+      {
+        "id": "book",
+        "name": "Book",
+        "subtitle": "decided to act.",
+        "empty": "Nothing on the book. No execution this walk."
+      }
+    ]
+  },
   "board": [
     {
       "id": "15",
@@ -59,7 +103,7 @@
       "title": "In July the market panicked. The factories did not.",
       "story": "AI stock prices had a crash month that felt like 2022. Gavin Baker went looking for a real-world reason and could not find one. Chips were getting easier to get, rental prices were up, memory was up, and people were using more tokens, not less. The scare was in the price of the shares. It was not in the plants.",
       "force": "the share price and the factory can point opposite ways. Read both.",
-      "from": "Gavin Baker, Invest Like the Best, 4 Aug. MSM: FT Alphaville, BBC, and the FSB ran the July \u201cAI bubble\u201d scare."
+      "from": "Gavin Baker, Invest Like the Best, 4 Aug. MSM: FT Alphaville, BBC, and the FSB ran the July “AI bubble” scare."
     },
     {
       "id": "16",
@@ -89,7 +133,7 @@
       "title": "Ordinary funding may be exhausted. That is why they are lending to themselves.",
       "story": "The plants and the labs need more cash than earnings, banks, and ordinary borrowing can cover. That claim still needs proof. If it is true, they have to invent other money: chip sellers lending to their own buyers, Nvidia reaching into insurance and pension money, the same dollars going around the same few companies and getting counted as revenue. Circular funding and the debt pile are what you do when the normal tap is dry. The BIS has already said the biggest cloud companies are spending faster than they earn. That is a start, not a close.",
       "force": "if ordinary money is exhausted, the stack starts lending to itself. Prove the exhaustion, not the weirdness.",
-      "from": "the board frame. All-In (Gurley circular). Stratechery 11 Aug Nvidia\u2019s risky business. Gavin Baker on credit wrappers. BIS on hyperscaler spend vs cash.",
+      "from": "the board frame. All-In (Gurley circular). Stratechery 11 Aug Nvidia’s risky business. Gavin Baker on credit wrappers. BIS on hyperscaler spend vs cash.",
       "note": "Sits next to prediction P2. No fourth thesis minted this walk."
     },
     {
@@ -113,7 +157,7 @@
       "title": "China is locking the ugly supply chains",
       "story": "China stopped exporting research monkeys. Prices jumped, US labs ran short. It already refines most rare earths and is moving to own the robots that run the mines, not just the rocks. In the Iran oil shock it quietly cut imports from stockpiles the West cannot see. The FCC just swept robot vacuums and humanoids onto a national-security import list. Each of these is an input the West did not build a second source for.",
       "force": "whoever owns the unglamorous input can turn it off.",
-      "from": "ChinaTalk 14 Jul\u201313 Aug (monkeys, minerals, oil, FCC robots)."
+      "from": "ChinaTalk 14 Jul–13 Aug (monkeys, minerals, oil, FCC robots)."
     },
     {
       "id": "18",
@@ -121,7 +165,7 @@
       "lifecycle_on_board": "emerging",
       "heat": 11,
       "title": "The payment system has not caught up to the model",
-      "story": "Intelligence is getting expensive. The rails that pay for it are still yesterday\u2019s rails. Stripe talks about software agents that need to pay for things. A payments founder says the banker in your pocket is coming and is not here. This is not a crypto-price story. It is that the model and the payment have not joined up.",
+      "story": "Intelligence is getting expensive. The rails that pay for it are still yesterday’s rails. Stripe talks about software agents that need to pay for things. A payments founder says the banker in your pocket is coming and is not here. This is not a crypto-price story. It is that the model and the payment have not joined up.",
       "force": "the old money system has not caught up to who should pay, or how.",
       "from": "Founders 2 Aug Micky Malka. Stripe / Collison."
     },
@@ -189,13 +233,14 @@
       "from": "kept observation. SemiAnalysis."
     }
   ],
-  "theses": [
+  "theses_6_12": [
     {
       "id": "TH-01",
       "kind": "thesis",
+      "horizon": "6-12m",
       "lifecycle": "live",
       "on_desk": false,
-      "title": "The plants are still the scarce thing, and July\u2019s scare was in the shares",
+      "title": "The plants are still the scarce thing, and July’s scare was in the shares",
       "claim": "The factories that make the chips were not built fast enough for the demand now hitting them. That shortage is still the brake. In July the shares panicked and the factories did not: chips were getting easier to get, rental and memory prices were up, and token use was up. Capital is already moving toward the plants, not the next model. The 6–12 month picture is that the physical thing stays scarce, and that July was a price event, not a factory event.",
       "from_board": [
         "15",
@@ -215,6 +260,7 @@
     {
       "id": "TH-02",
       "kind": "thesis",
+      "horizon": "6-12m",
       "lifecycle": "live",
       "on_desk": false,
       "title": "China already owns the ugly inputs Western robots need",
@@ -234,10 +280,11 @@
     {
       "id": "TH-03",
       "kind": "thesis",
+      "horizon": "6-12m",
       "lifecycle": "live",
       "on_desk": false,
       "title": "The model can spend. The payment rail cannot.",
-      "claim": "Intelligence is getting expensive. The rails that pay for it are still yesterday\u2019s rails. Stripe talks about agents that need to pay. Malka\u2019s point is that the banker in your pocket is coming and is not here. The model and the payment have not joined up. That is the situation. It is not a crypto-price story, and it is not a claim that a new payments winner already exists.",
+      "claim": "Intelligence is getting expensive. The rails that pay for it are still yesterday’s rails. Stripe talks about agents that need to pay. Malka’s point is that the banker in your pocket is coming and is not here. The model and the payment have not joined up. That is the situation. It is not a crypto-price story, and it is not a claim that a new payments winner already exists.",
       "from_board": [
         "18"
       ],
@@ -246,75 +293,96 @@
       ],
       "clock": "6–12 months",
       "kill": "agents stay demos; existing rails (Visa, Stripe, banks) absorb the traffic without a new winner.",
-      "priced": "\u201cAI payments\u201d is an easy story and is probably in several names already. Not checked live.",
+      "priced": "“AI payments” is an easy story and is probably in several names already. Not checked live.",
       "skew": "On the obvious names this looks like 10%, not 10x, unless a cheap specific expression appears. That is a failed skew gate, not a dead picture.",
       "desk": "failed skew gate — not enough asymmetry on the obvious names"
     }
   ],
-  "candidates": [
+  "theses_now": [],
+  "dead_parked": [],
+  "thesis_candidates": [
     {
       "id": "CA-01",
-      "kind": "candidate",
-      "lifecycle": "candidate",
+      "kind": "thesis_candidate",
+      "lifecycle": "thesis_candidate",
       "unfinished": true,
       "buy": false,
-      "title": "Plant-and-power landlords as an expression of TH-01",
-      "object": "TSM and the power names people already use, as a way to hold \u201cthe plants are still the scarce thing.\u201d If the factory prints stay tight, this is how TH-01 would be expressed in stocks Nathan can hold. It is not a buy.",
-      "what_it_is": "The same object as WL-01, without the trigger. A picture with a stock-shaped shape. Still not a buy.",
-      "why_unfinished": "No live price. No written skew math. Several names here may be one factor bet. July\u2019s scare was not marked against a tape, so there is no entry number.",
+      "title": "Plant-and-power landlords",
+      "object": "An expression of TH-01, not a stock. The way to hold “the plants are still the scarce thing” is to sit with the people who own the scarce physical thing — the foundry, the power landlords. This card is that picture. It is not a ticker. It will spawn stock rows on the Candidates tab.",
+      "what_it_is": "A thesis candidate. A shape for how TH-01 would be held, before any name is screened.",
+      "what_it_is_not": "A stock. A buy. A price.",
+      "why_unfinished": "No live prices on the names it would spawn. No written skew. Several names may be one factor bet. July’s scare was not marked against a tape.",
       "clock_kill": "inherits TH-01 — utilization, rents, memory, cancelled capex.",
       "thesis": "TH-01",
-      "waitlist": "WL-01",
-      "note": "Nathan may pick into his personal book; that pick does not score the machine."
+      "spawns": [
+        "ST-01",
+        "ST-02"
+      ],
+      "note": "Not a name. Lives on the Funnel tab. Stock names it spawns live on the Candidates tab."
     }
   ],
-  "waitlist": [
+  "stocks": [
+    {
+      "id": "ST-01",
+      "kind": "stock",
+      "lifecycle": "unfinished",
+      "unfinished": true,
+      "buy": false,
+      "title": "Taiwan Semiconductor (TSM)",
+      "object": "The default name people already use for the foundry side of TH-01. Unfinished. No live price. May be crowded. Not a buy.",
+      "what_it_is": "A stock name spawned by CA-01. Not screened.",
+      "why_unfinished": "No live price. No written skew. The default name may already have no skew left — that is why TH-01 is live and not on the desk.",
+      "from": "CA-01",
+      "thesis": "TH-01",
+      "live_price": null,
+      "note": "May be crowded / the default name. Not a buy."
+    },
+    {
+      "id": "ST-02",
+      "kind": "stock",
+      "lifecycle": "unfinished",
+      "unfinished": true,
+      "buy": false,
+      "title": "Power landlords (names not picked)",
+      "object": "The grid / power names people already use for the same TH-01 factor. Unfinished. Several names may be one bet. Not a buy. No ticker written — a specific name we cannot stand behind is worse than a generic card.",
+      "what_it_is": "A stock-shaped slot spawned by CA-01. Names not picked.",
+      "why_unfinished": "No ticker chosen. No live price. Several names here may be one factor bet, not several bets.",
+      "from": "CA-01",
+      "thesis": "TH-01",
+      "ticker": null,
+      "live_price": null,
+      "note": "Do not invent a specific ticker. Generic card on purpose."
+    }
+  ],
+  "monitor": [
     {
       "id": "WL-01",
       "kind": "waitlist",
       "lifecycle": "waitlist",
-      "title": "Same plant expression, armed only on two conditions",
-      "object": "The same CA-01 object — TSM and the power names. It does not arm because the picture is true. It arms only if both conditions print.",
+      "title": "Watches ST-01 / ST-02. Arms only on two conditions",
+      "object": "It does not arm because the picture is true. It arms only if both conditions print on the stock names. It watches the stocks, not the expression.",
+      "watches": [
+        "ST-01",
+        "ST-02"
+      ],
       "arms_only_if_both": [
-        "a real drawdown in the plant/power names — not a headline, a price that has already moved",
+        "a real drawdown in the names (ST-01 / ST-02) — not a headline, a price that has already moved",
         "factory / rental / memory prints still tight. If the prints ease, WL-01 dies with TH-01."
       ],
       "size": null,
       "entry": null,
       "note": "No size. No entry until both. One condition is not enough.",
-      "candidate": "CA-01",
+      "from": "CA-01",
       "thesis": "TH-01"
     }
   ],
+  "action": [],
   "book": [],
-  "off_the_desk": [
-    {
-      "id": "TH-01",
-      "kind": "held",
-      "gate": "priced-in",
-      "title": "Priced-in not checked; crowded default expressions",
-      "reason": "The plant picture is live. It does not sit on the desk. July\u2019s scare was not checked against a tape, and the names people already use for this view look crowded."
-    },
-    {
-      "id": "TH-02",
-      "kind": "held",
-      "gate": "no expression",
-      "title": "No expression with written skew",
-      "reason": "The input picture is live. There is no written way to hold the squeeze side. A US-listed humanoid would be the expensive side of the same fact."
-    },
-    {
-      "id": "TH-03",
-      "kind": "held",
-      "gate": "skew",
-      "failed_skew": true,
-      "title": "Failed skew — upside looks thin versus the work",
-      "reason": "The rail gap is a real situation. On the names that already carry \u201cAI payments,\u201d the upside looks like a small re-rating, not an asymmetric hold."
-    }
-  ],
+  "off_the_desk": [],
   "judge": {
     "pass": "first",
     "notes": [
-      "Pipe ran. Three theses, none on the desk, one unfinished candidate, one conditional wait. Working filter, not a broken engine. No live prices."
+      "Pipe ran. Three theses, none on the desk. One thesis candidate (expression, not a name). Two unfinished stock names spawned from it. One conditional wait on those names. Working filter, not a broken engine. No live prices."
     ]
   }
 }
