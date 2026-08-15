@@ -10,10 +10,10 @@ Plain English. If a word needs a glossary, do not use it on a card.
 
 | Person | Talks to Nathan | Does | Does not |
 | --- | --- | --- | --- |
-| **Investment Architect** | Yes. Nathan talks only to Architect. | Writes the **local** board only. Carries Nathan’s keep, fold, park, sit, and “write names” to Macro and Micro. | Does not publish the local board to this repo. Does not let Macro or Micro speak to Nathan. |
+| **Investment Architect** | Yes. Nathan talks only to Architect. | Writes the **local** board only. Carries Nathan’s keep, fold, park, sit, and “a new idea landed” to Macro and Micro. | Does not publish the local board to this repo. Does not let Macro or Micro speak to Nathan. |
 | **Macro** | No. Silent toward Nathan. | Drafts theses. Writes tension notes. Writes Investment Ideas. Refines live thesis cards. Writes the notebook. | Does not mint a live thesis. Does not write names. Does not pick a winner when two theses fight. |
-| **Micro** | No. Silent toward Nathan. | Writes names, and only when Nathan asked. | Does not mint theses. Does not write Investment Ideas. Does not invent a parent theme to keep a name. |
-| **Nathan** | Talks to Architect only. | Keeps or folds. Asks for names, or does not. His words go in the notebook. | Does not owe Macro a conversation. Silence is not a keep. |
+| **Micro** | No. Silent toward Nathan. | Writes 2–4 discussable names whenever a new Investment Idea lands. Stay-off names if the idea is sit off. Honest empty only with a why. | Does not mint theses. Does not write Investment Ideas. Does not invent a parent theme to keep a name. Does not write names because a thesis was kept and no idea has landed. |
+| **Nathan** | Talks to Architect only. | Keeps or folds. His words go in the notebook. | Does not owe Macro a conversation. Silence is not a keep. Does not have to ask for names; a new idea is the trigger. |
 
 Architect’s local board lives at:
 
@@ -79,11 +79,11 @@ A draft uses the same shape. Until Nathan keeps it, it is a draft. It does not g
 
 The shape of what we might sit with, written from a kept thesis, or from a pair of kept theses.
 
-It is not a stock name. It is not a buy. It is not a ticker. It does not spawn a Candidates-tab row.
+It is not a stock name. It is not a buy. It is not a ticker. The idea card is not a name. When it lands, Micro must write 2–4 discussable names ([`names.md`](names.md)).
 
 ### Name
 
-A company or instrument, written only when Nathan asked. Micro owns names. Macro owns ideas.
+A company or instrument on the Candidates tab, written when a new Investment Idea lands. Micro owns names. Macro owns ideas. A thesis keep is not the trigger.
 
 ---
 
@@ -92,7 +92,7 @@ A company or instrument, written only when Nathan asked. Micro owns names. Macro
 Write so a stranger can read the card.
 
 - No “money is easy / money is tight” frame. A dated funding fact already on the Board can be part of a judgement. A slogan cannot.
-- No unexplained labels, series names, or ticker soup. Prefer “the factory,” “the paper,” “the rail.” A name appears only if the sentence cannot be true without a name you can stand behind — and even then, names belong on the Candidates tab after Nathan asks, not on a thesis or an idea.
+- No unexplained labels, series names, or ticker soup. Prefer “the factory,” “the paper,” “the rail” on Board, thesis, and idea cards. Names belong on the Candidates tab after an idea lands, not on a thesis or an idea.
 - No shop slang on cards or in these run files: do not write *hang*, *dies*, *desk skew*, or *kill*. Say what you mean: “what would make this false,” “no longer live,” “already in the price,” “we have not checked.”
 - No manager names on cards. Use the method. Do not cite the person.
 
@@ -132,7 +132,7 @@ Write so a stranger can read the card.
 6. **Auto-keep.** Draft moved to live Theses without Nathan.
 7. **Minting from the notebook.** A past keep reused as a new live id, or a past drop ignored.
 8. **Picking a winner** when two theses can fight. That is what the fork is for.
-9. **Spawning names because a thesis was kept.** Names only if asked.
+9. **Spawning names because a thesis was kept.** A keep is not names. The trigger is a new Investment Idea. Skipping names after an idea landed, with no why, is the other half of this failure.
 10. **Publishing the local board** or pasting live `board.json` / local `index.html` into this repo.
 11. **Rewriting a kept judgement** because the wording got prettier. Refine the notes. The judgement stays until the world forces a rewrite.
 12. **Inventing why Nathan folded.** If he did not say why, write that he did not say why.
@@ -147,7 +147,7 @@ Write so a stranger can read the card.
 - Drafts: `DRAFT-*` until kept. Not live.
 - Kept theses: `TH-*`. Architect assigns the next number on the local board.
 - Investment Ideas: `IDEA-*`. Not `CA-*` (old label; collided with Candidates).
-- Names (only if asked): `ST-*` on the Candidates tab.
+- Names (when an idea lands): `ST-*` on the Candidates tab.
 
 Do not invent IDs in this public repo as if they were live.
 
@@ -157,4 +157,4 @@ Do not invent IDs in this public repo as if they were live.
 
 Not a trading bot. Not a size. Not an order. Not a screen that pretends to be a buy.
 
-The funnel stops at judgement and sit-shape unless Nathan asks for names. Even then, a name is not a buy.
+The funnel stops at judgement and sit-shape until a new Investment Idea lands. Then Micro writes discussable names. A name is not a buy.

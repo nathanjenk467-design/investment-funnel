@@ -35,7 +35,7 @@ Leave this file here so that slice does not contradict the set.
 | Fights left as an open question | Tension note on the new card: we notice, they may or may not contradict, we think ____. Ideas write every live branch. Do not pick a winner. |
 | One draft per pass left open | One **process** per morning (8am Hong Kong, all seven days). As many drafts as are actually new, then a **written duplicate-stop**. |
 | Notebook proposed as `docs/thesis-notebook.md` in this repo | Notebook lives **with the local board**. Do not publish it here. |
-| Micro begins at the hold | Micro writes **names only if Nathan asked**. Macro owns ideas. |
+| Micro begins at the hold | Micro writes **2–4 discussable names when a new Investment Idea lands**. A thesis keep is not the trigger. Macro owns ideas. |
 | “Kill / dies / desk skew” in the run voice | Plain English only. See [`standing-rules.md`](standing-rules.md). |
 
 ## Where each old step went
@@ -50,7 +50,7 @@ Leave this file here so that slice does not contradict the set.
 | Pair fights | [`investment-ideas.md`](investment-ideas.md) pass 2 |
 | After keep, own the card | [`refine.md`](refine.md) |
 | What Nathan said | [`notebook.md`](notebook.md) |
-| Names | [`names-if-asked.md`](names-if-asked.md) |
+| Names | [`names.md`](names.md) |
 
 Open questions in the old §9 that the session answered are closed as above. Anything still open is operational (exact local notebook path). It does not block tomorrow morning.
 

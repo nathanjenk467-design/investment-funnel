@@ -29,7 +29,7 @@ Write when:
 - a duplicate-stop was written
 - a join-to-theme happened
 - a refine pass saw a world print that would make a thesis false
-- Nathan asked for names, or refused names
+- A new Investment Idea landed, and which names Micro wrote (or the honest-empty why)
 - Nathan said “this is not a thesis” or “this sits on TH-__”
 
 Do not write Macro’s unused slogans. Do not write tickers. Do not write a why Nathan did not say.
@@ -47,7 +47,7 @@ Dated. Hong Kong date. His words first.
 5. **If he did not say why** — write: “He did not say why.” Stop. Do not invent a why.
 6. **Join instructions** — “this print sits on the plants theme”; “this is not a thesis.”
 7. **Open fights he left on the Board** — so a later pass does not “resolve” them.
-8. **Ideas written after a keep** — one line per `IDEA-*`, including each pair-branch. He has not been asked to pick a branch unless he said so.
+8. **Ideas written after a keep** — one line per `IDEA-*`, including each pair-branch. He has not been asked to pick a branch unless he said so. For each new idea: the 2–4 names Micro wrote, or the honest-empty why.
 
 ---
 

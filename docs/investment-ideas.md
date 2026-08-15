@@ -2,11 +2,11 @@
 
 Run **only after Nathan keeps a thesis**.
 
-Macro writes the ideas. Architect puts them on the local Funnel column **Investment Ideas**. Micro does not write this column. Names do not spawn.
+Macro writes the ideas. Architect puts them on the local Funnel column **Investment Ideas**. Micro does not write this column.
 
-An idea is the **shape of what we might sit with**. Not a stock name. Not a buy. Not a ticker. Not a Candidates-tab row.
+An idea is the **shape of what we might sit with**. Not a stock name. Not a buy. Not a ticker. The idea card itself is not a Candidates-tab row.
 
-A keep of a thesis is not automatically names.
+A keep of a thesis is not automatically names. **A new idea landing is.** The moment Architect places an `IDEA-*` on the Funnel, Micro runs [`names.md`](names.md): 2–4 discussable names for that idea. A sit-off idea still gets stay-off names. An honest empty needs a why.
 
 ---
 
@@ -23,7 +23,7 @@ If there are three live theses, do the new one against each other live one. Do n
 
 ## Pass 1 — from the kept thesis alone
 
-Write one idea (or sit: this judgement has no honest sit-shape yet).
+Write one idea. The sit can be **sit with** or **sit off**. Sit off is still an idea that lands. It still triggers names (stay-off names). “No honest sit-shape yet” is an idea only if you write it as sit off with a why; it still lands, and Micro still owes names or an honest empty.
 
 Required:
 
@@ -35,7 +35,7 @@ Required:
 - **Clock** — tag, inherited or a written reason it differs
 - **Already in the price, or not checked** — still no ticker
 
-Do not write a company. Do not write a ticker. If the sit cannot be said without a company name, the sit is not clear yet. That is Macro’s problem to fix, not a reason to call Micro.
+Do not write a company. Do not write a ticker. If the sit cannot be said without a company name, the sit is not clear yet. That is Macro’s problem to fix. Micro names the vehicles **after** this idea lands, not in this file.
 
 One honest sit is better than four cousins of the same sit.
 
@@ -92,7 +92,7 @@ Write four ideas, each naming its branch. Each idea says which thesis it is sitt
 - **What this branch does to the other thesis** — leave it, force a look, or sit in tension (they may or may not contradict; we think ____)
 - **Already in the price, or not checked**
 
-No ticker. No name. No buy.
+No ticker on the idea card. No buy. Names wait for the idea to land, then [`names.md`](names.md).
 
 ---
 
@@ -102,8 +102,9 @@ No ticker. No name. No buy.
 - Do not write one sit that needs both theses to stay true unless that sit is **Branch A** (or the equivalent “both hold” cell) and is labeled as that cell.
 - Do not skip the unpaid-factory branch because it is awkward.
 - Do not skip the “factory paid and paper never breaks” branch because it sounds like consensus.
-- Do not spawn `ST-*` rows. Nathan has not asked.
-- Do not hand Micro a ticker “for example.”
+- Do not write `ST-*` rows in this file. Macro does not name. Micro names after the idea lands.
+- Do not hand Micro a ticker “for example” inside the idea card.
+- Do not skip calling Micro after an idea lands. The trigger is the landing, not Nathan asking.
 - Do not use the old “thesis candidate” label.
 
 ---
@@ -112,8 +113,8 @@ No ticker. No name. No buy.
 
 Architect places the `IDEA-*` cards on the local Investment Ideas column.
 
+That placement **is** the trigger. Architect tells Micro. Micro runs [`names.md`](names.md) for each new idea: 2–4 discussable names, stay-off names if the idea is sit off, or an honest empty with a why.
+
 Macro writes the notebook: ideas offered, in one line each; Nathan has not been asked to pick a branch.
 
-Macro does not refine the ideas until the world moves ([`refine.md`](refine.md) is for kept theses first; an idea is refreshed when its parent thesis is refined, or when Nathan asks).
-
-Names: stop. Wait for [`names-if-asked.md`](names-if-asked.md).
+Macro does not refine the ideas until the world moves ([`refine.md`](refine.md) is for kept theses first; an idea is refreshed when its parent thesis is refined).
