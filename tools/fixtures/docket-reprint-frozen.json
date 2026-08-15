@@ -1,0 +1,69 @@
+{
+  "as_of": "2026-08-16",
+  "note": "Method fixture. The frozen set, reworded as if it were new. This run must fail.",
+  "items": [
+    {
+      "docket_id": "N-REPRINT-PLANT",
+      "kind": "kept_situation",
+      "title": "AI chip factories are still dramatically under-built (updated)",
+      "story": "Reprint. New tapes this week did not change the situation.",
+      "force": "they did not build enough plants.",
+      "from": "frozen reprint fixture",
+      "situation_key": "plant"
+    },
+    {
+      "docket_id": "N-REPRINT-JULY",
+      "kind": "kept_situation",
+      "title": "In July the market panicked. The factories did not.",
+      "story": "Reprint of the July scare.",
+      "force": "the share price and the factory can point opposite ways.",
+      "from": "frozen reprint fixture",
+      "situation_key": "july-scare"
+    },
+    {
+      "docket_id": "N-REPRINT-OLD",
+      "kind": "kept_situation",
+      "title": "Compute is getting dearer, and old cards still earn",
+      "story": "Reprint of the old-cards story.",
+      "force": "more demand for the same scarce machines, and the machines last.",
+      "from": "frozen reprint fixture",
+      "situation_key": "old-cards"
+    },
+    {
+      "docket_id": "N-REPRINT-CAPITAL",
+      "kind": "kept_situation",
+      "title": "The money is going to the plants, not the next model",
+      "story": "Reprint of capital-to-plants.",
+      "force": "capital follows the scarce physical thing, not the research team.",
+      "from": "frozen reprint fixture",
+      "situation_key": "capital-to-plants"
+    },
+    {
+      "docket_id": "N-REPRINT-CIRCULAR",
+      "kind": "kept_situation",
+      "title": "Ordinary funding may be exhausted. That is why they are lending to themselves.",
+      "story": "Reprint of circular paper.",
+      "force": "if ordinary money is exhausted, the stack starts lending to itself.",
+      "from": "frozen reprint fixture",
+      "situation_key": "circular-paper"
+    },
+    {
+      "docket_id": "N-REPRINT-POWER",
+      "kind": "kept_situation",
+      "title": "Power is the problem. Nobody agrees what happens next.",
+      "story": "Reprint of the power fight.",
+      "force": "the problem is agreed. The path and the fix are not.",
+      "from": "frozen reprint fixture",
+      "situation_key": "power-fight"
+    },
+    {
+      "docket_id": "N-REPRINT-AUG",
+      "kind": "fresh_print",
+      "title": "Mid-August prints on the same plant cards",
+      "story": "New tapes this week, folded onto old cards. Not a new situation.",
+      "force": "this week’s tape agrees with a card already there.",
+      "from": "frozen reprint fixture",
+      "situation_key": "mid-august-prints"
+    }
+  ]
+}

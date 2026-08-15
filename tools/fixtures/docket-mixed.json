@@ -1,0 +1,25 @@
+{
+  "as_of": "2026-08-16",
+  "note": "Method fixture only. One new situation plus a fresh print on an old card. The print must not count as a new card.",
+  "items": [
+    {
+      "docket_id": "N-SYNTH-WATER",
+      "kind": "kept_situation",
+      "title": "The desert plant was denied the water it already counted on",
+      "story": "Method fixture only. A plant that was already in the plan cannot take water the basin did not grant.",
+      "force": "the water right is the gate, not the chip order.",
+      "from": "synthetic intake fixture",
+      "situation_key": "desert-water-denied"
+    },
+    {
+      "docket_id": "N-PRINT-15",
+      "kind": "fresh_print",
+      "title": "AI chip factories are still dramatically under-built",
+      "story": "Method fixture. A new tape this week ran into the same wall. It belongs on card 15.",
+      "force": "they did not build enough plants.",
+      "from": "synthetic intake fixture",
+      "updates_board_id": "15",
+      "situation_key": "plant"
+    }
+  ]
+}
