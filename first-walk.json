@@ -1,16 +1,18 @@
 {
-  "walk": "first",
-  "date": "2026-08-14",
+  "walk": "micro-15aug",
+  "date": "2026-08-15",
   "title": "Investment funnel",
-  "lede": "Funnel is world pictures and thesis candidates (expressions). Candidates tab is actual names spawned from those expressions, then monitor / action / book. Refresh this page for the latest walk.",
+  "lede": "Funnel is world pictures and thesis candidates (expressions). Candidates tab is names (spawned or thrown), then Screen after analysis, then monitor / action / book. Reload for the latest walk.",
   "meta": {
     "machine_ran": true,
     "nathan_role": "opinion, not a gate",
     "book": "empty",
     "label_debt": "Board is Narrative Trend-board cards + open predictions + kept observations, not minted kind=trend, not narratives.",
-    "live_prices": false,
+    "live_prices": true,
     "live_risk": false,
-    "correlation_map": false
+    "correlation_map": false,
+    "price_asof": "2026-08-14",
+    "pass": "Micro desk. Themes already written. Named vehicles, then both views."
   },
   "tabs": [
     {
@@ -63,7 +65,13 @@
       {
         "id": "stocks",
         "name": "Stocks",
-        "subtitle": "names spawned from a thesis candidate. Not a buy."
+        "subtitle": "spawned from a thesis candidate, or a name you threw. Not analyzed yet. Not a buy."
+      },
+      {
+        "id": "screen",
+        "name": "Screen",
+        "subtitle": "after a pick is analyzed.",
+        "empty": "Named stocks move here once priced."
       },
       {
         "id": "monitor",
@@ -103,7 +111,7 @@
       "title": "In July the market panicked. The factories did not.",
       "story": "AI stock prices had a crash month that felt like 2022. Gavin Baker went looking for a real-world reason and could not find one. Chips were getting easier to get, rental prices were up, memory was up, and people were using more tokens, not less. The scare was in the price of the shares. It was not in the plants.",
       "force": "the share price and the factory can point opposite ways. Read both.",
-      "from": "Gavin Baker, Invest Like the Best, 4 Aug. MSM: FT Alphaville, BBC, and the FSB ran the July \u201cAI bubble\u201d scare."
+      "from": "Gavin Baker, Invest Like the Best, 4 Aug. MSM: FT Alphaville, BBC, and the FSB ran the July “AI bubble” scare."
     },
     {
       "id": "16",
@@ -133,7 +141,7 @@
       "title": "Ordinary funding may be exhausted. That is why they are lending to themselves.",
       "story": "The plants and the labs need more cash than earnings, banks, and ordinary borrowing can cover. That claim still needs proof. If it is true, they have to invent other money: chip sellers lending to their own buyers, Nvidia reaching into insurance and pension money, the same dollars going around the same few companies and getting counted as revenue. Circular funding and the debt pile are what you do when the normal tap is dry. The BIS has already said the biggest cloud companies are spending faster than they earn. That is a start, not a close.",
       "force": "if ordinary money is exhausted, the stack starts lending to itself. Prove the exhaustion, not the weirdness.",
-      "from": "the board frame. All-In (Gurley circular). Stratechery 11 Aug Nvidia\u2019s risky business. Gavin Baker on credit wrappers. BIS on hyperscaler spend vs cash.",
+      "from": "the board frame. All-In (Gurley circular). Stratechery 11 Aug Nvidia’s risky business. Gavin Baker on credit wrappers. BIS on hyperscaler spend vs cash.",
       "note": "Sits next to prediction P2. No fourth thesis minted this walk."
     },
     {
@@ -157,7 +165,7 @@
       "title": "China is locking the ugly supply chains",
       "story": "China stopped exporting research monkeys. Prices jumped, US labs ran short. It already refines most rare earths and is moving to own the robots that run the mines, not just the rocks. In the Iran oil shock it quietly cut imports from stockpiles the West cannot see. The FCC just swept robot vacuums and humanoids onto a national-security import list. Each of these is an input the West did not build a second source for.",
       "force": "whoever owns the unglamorous input can turn it off.",
-      "from": "ChinaTalk 14 Jul\u201313 Aug (monkeys, minerals, oil, FCC robots)."
+      "from": "ChinaTalk 14 Jul–13 Aug (monkeys, minerals, oil, FCC robots)."
     },
     {
       "id": "18",
@@ -165,7 +173,7 @@
       "lifecycle_on_board": "emerging",
       "heat": 11,
       "title": "The payment system has not caught up to the model",
-      "story": "Intelligence is getting expensive. The rails that pay for it are still yesterday\u2019s rails. Stripe talks about software agents that need to pay for things. A payments founder says the banker in your pocket is coming and is not here. This is not a crypto-price story. It is that the model and the payment have not joined up.",
+      "story": "Intelligence is getting expensive. The rails that pay for it are still yesterday’s rails. Stripe talks about software agents that need to pay for things. A payments founder says the banker in your pocket is coming and is not here. This is not a crypto-price story. It is that the model and the payment have not joined up.",
       "force": "the old money system has not caught up to who should pay, or how.",
       "from": "Founders 2 Aug Micky Malka. Stripe / Collison."
     },
@@ -240,15 +248,22 @@
       "horizon": "6-12m",
       "lifecycle": "live",
       "on_desk": false,
-      "title": "The plants are still the scarce thing, and July\u2019s scare was in the shares",
-      "claim": "The factories that make the chips were not built fast enough for the demand now hitting them. That shortage is still the brake. In July the shares panicked and the factories did not: chips were getting easier to get, rental and memory prices were up, and token use was up. Capital is already moving toward the plants, not the next model. The 6\u201312 month picture is that the physical thing stays scarce, and that July was a price event, not a factory event.",
-      "from_board": ["15", "7", "16", "1"],
-      "related_predictions": ["P1"],
-      "clock": "6\u201312 months. Call window overlaps P1 (bottleneck still true at Christmas).",
+      "title": "The plants are still the scarce thing, and July’s scare was in the shares",
+      "claim": "The factories that make the chips were not built fast enough for the demand now hitting them. That shortage is still the brake. In July the shares panicked and the factories did not: chips were getting easier to get, rental and memory prices were up, and token use was up. Capital is already moving toward the plants, not the next model. The 6–12 month picture is that the physical thing stays scarce, and that July was a price event, not a factory event.",
+      "from_board": [
+        "15",
+        "7",
+        "16",
+        "1"
+      ],
+      "related_predictions": [
+        "P1"
+      ],
+      "clock": "6–12 months. Call window overlaps P1 (bottleneck still true at Christmas).",
       "kill": "utilization down, rental and memory prices down, large capex cancelled. A second share-price scare without those prints is not a kill.",
-      "priced": "July already ran the bubble scare. If that scare has faded, some of this is back in the price. Not checked against a tape. No live prices on this walk.",
+      "priced": "Checked 14 Aug 2026 Yahoo last prints. Default plant names already assume a lot of the good case: TSM $426.35 is −10.7% from the 30 Jun high and +13.8% off the 29 Jul scare close; MU $971.66 is +240% YTD and +31.5% off the 29 Jul close $739. Power tape did not run with them in 2026 (VST −8.2% YTD, −32% from the Sep 2025 high). Physical still tight. Not a buy on the spent names.",
       "skew": "The honest side is long the scarce physical thing. Equity names that everyone already uses for this view (the foundry, the obvious power names) may have no skew left. That is why this is live and not on the desk.",
-      "desk": "not on desk \u2014 priced-in not checked; default expressions look crowded"
+      "desk": "not on desk as a buy — plant tape spent; power is the less-spent vehicle and still a wait"
     },
     {
       "id": "TH-02",
@@ -258,12 +273,17 @@
       "on_desk": false,
       "title": "China already owns the ugly inputs Western robots need",
       "claim": "China stopped the monkeys, holds the rare earths and about 90% of the permanent magnets, is filling the trailing-edge MCU sockets robots actually use, and is already shipping a cheap humanoid unit. The West did not build a second source for the unglamorous inputs. That is one situation: the input is already theirs. It is not a claim that a US-listed humanoid works, or that a Western robot company is the way to hold it.",
-      "from_board": ["10", "OB-01", "OB-02", "OB-03"],
-      "clock": "6\u201312 months",
+      "from_board": [
+        "10",
+        "OB-01",
+        "OB-02",
+        "OB-03"
+      ],
+      "clock": "6–12 months",
       "kill": "magnet export relief plus a real Western second source, or Chinese humanoid shipments fail in public numbers.",
-      "priced": "not checked. No tape on this walk.",
-      "skew": "The obvious long \u2014 a US-listed humanoid \u2014 is the expensive side of the same fact. The input / squeeze side is the real expression and is unfinished. No written instrument yet.",
-      "desk": "not on desk \u2014 no written expression with skew yet"
+      "priced": "Checked 14 Aug 2026. Chinese magnet landlords did not run this year (JL MAG 6680.HK HK$17.16, −7% YTD, −40% from the Oct 2025 high). The Western second-source names (MP, Lynas) are the kill side, not the hold.",
+      "skew": "The obvious long — a US-listed humanoid — is the expensive side of the same fact. The magnet landlord is now named (ST-03) and is a wait. Trailing-edge socket still unnamed.",
+      "desk": "not on desk as a buy — expression now written (CA-02); magnet name is a wait, trailing-edge socket still unnamed"
     },
     {
       "id": "TH-03",
@@ -272,14 +292,18 @@
       "lifecycle": "live",
       "on_desk": false,
       "title": "The model can spend. The payment rail cannot.",
-      "claim": "Intelligence is getting expensive. The rails that pay for it are still yesterday\u2019s rails. Stripe talks about agents that need to pay. Malka\u2019s point is that the banker in your pocket is coming and is not here. The model and the payment have not joined up. That is the situation. It is not a crypto-price story, and it is not a claim that a new payments winner already exists.",
-      "from_board": ["18"],
-      "related_predictions": ["P3"],
-      "clock": "6\u201312 months",
+      "claim": "Intelligence is getting expensive. The rails that pay for it are still yesterday’s rails. Stripe talks about agents that need to pay. Malka’s point is that the banker in your pocket is coming and is not here. The model and the payment have not joined up. That is the situation. It is not a crypto-price story, and it is not a claim that a new payments winner already exists.",
+      "from_board": [
+        "18"
+      ],
+      "related_predictions": [
+        "P3"
+      ],
+      "clock": "6–12 months",
       "kill": "agents stay demos; existing rails (Visa, Stripe, banks) absorb the traffic without a new winner.",
-      "priced": "\u201cAI payments\u201d is an easy story and is probably in several names already. Not checked live.",
+      "priced": "“AI payments” is an easy story and is probably in several names already. Not checked live.",
       "skew": "On the obvious names this looks like 10%, not 10x, unless a cheap specific expression appears. That is a failed skew gate, not a dead picture.",
-      "desk": "failed skew gate \u2014 not enough asymmetry on the obvious names"
+      "desk": "failed skew gate — not enough asymmetry on the obvious names"
     }
   ],
   "theses_now": [],
@@ -289,53 +313,68 @@
       "id": "CA-01",
       "kind": "thesis_candidate",
       "lifecycle": "thesis_candidate",
-      "unfinished": true,
+      "unfinished": false,
       "buy": false,
       "title": "Plant-and-power landlords",
-      "object": "An expression of TH-01, not a stock, not a buy, not a ticker. The way to hold \u201cthe plants are still the scarce thing\u201d is to sit with the people who own the scarce physical thing \u2014 the foundry, the power landlords. This card is that picture. It spawns ST-01, ST-02. Those names stay unfinished and unscreened.",
-      "what_it_is": "A thesis candidate. A written hold of TH-01, before any name is screened.",
-      "what_it_is_not": "A stock. A buy. A ticker. A price.",
-      "why_unfinished": "Sit. Unfinished hold. No live price. ST-01 / ST-02 not opened.",
+      "object": "An expression of TH-01, not a stock, not a buy. Sit with whoever owns the scarce physical thing — the foundry, the memory plants, the power landlords. This pass named the vehicles and screened them. None of them are a buy.",
+      "what_it_is": "A thesis candidate. The shape of how TH-01 would be held.",
+      "what_it_is_not": "A stock. A buy. A ticker. The next model. A spender. A tool-maker or a test-side consumable.",
+      "why_unfinished": "The hold is written. The names are screened. Sit remains the desk answer because plant tape is spent and power still waits on both conditions.",
       "clock_kill": "The plants that make the leading chips, and the electricity that turns them on, stay scarce. Utilization stays high. Memory prices and GPU rents do not collapse. Big build programs at foundries / memory / power queue are not cancelled. A second scare in the shares, by itself, is not a kill.",
       "thesis": "TH-01",
-      "spawns": ["ST-01", "ST-02"],
-      "note": "Not a name. Lives on the Funnel tab. Stock names it spawns live on the Candidates tab.",
-      "tape": "The physical side is agreeing; the tape is not early. July was a share-price scare (semis dumped hard, plants did not). Some of that was bought back in early August. On the obvious plant side the story may already be partly spent. On power it is still early (Texas paused the data-center interconnect queue in August). Sit. A good picture with a tape that just bounced the scare is a wait, not a name.",
-      "how_the_hold_fails": "Even if TH-01 is true, the plant can stay scarce and the landlord still not get paid (customer keeps the surplus; memory contracts already locked the rent; queue is mostly phantom).",
-      "desk": "Sit. Unfinished hold. No live price. ST-01 / ST-02 not opened."
+      "spawns": [
+        "ST-01",
+        "ST-02",
+        "ST-08"
+      ],
+      "world_state": "confirmed on the physical; spent on the default plant names; fade/wait on power",
+      "order": "fundamental-first",
+      "note": "ST-01, ST-02, and ST-08 are one factor. Power is the less-spent tape. Do not treat three monitors as three bets.",
+      "tape": "14 Aug 2026 Yahoo lasts. Physical agreeing: DigiTimes (mid-Aug) says 2027 DRAM/HBM from the three memory plants is booked; Micron 12 Aug said 2027 tighter than 2026 and DRAM is the constraint, not power. Plant tape spent: TSM $426.35 is +40% YTD and already bought back the July scare; MU $971.66 is +240% YTD and +31.5% off 29 Jul $739. Power tape did not run with them: VST $148.13 is −8.2% YTD and −32% from 22 Sep 2025 $217.92. Texas pause (Abbott 3 Aug, ERCOT Batch Zero delayed, PUCT 20 Aug) is a queue audit, not a print that the landlord already gets paid. Sit.",
+      "how_the_hold_fails": "Even if TH-01 is true, the plant can stay scarce and the landlord still not get paid (customer keeps the surplus; memory contracts already locked the rent; the Texas queue is mostly phantom — Vistra’s own CEO said 8 Aug he wants the queue culled). Power load that is real is a 2027–28 hookup. That is late for a 6–12 month clock.",
+      "desk": "Sit. Hang is real. Plant names spent. Power is a wait, not an action."
+    },
+    {
+      "id": "CA-02",
+      "kind": "thesis_candidate",
+      "lifecycle": "thesis_candidate",
+      "unfinished": true,
+      "buy": false,
+      "title": "Ugly-input landlords",
+      "object": "Expression of TH-02. Sit with whoever already owns the magnet. Not a US-listed humanoid. Not a Western rare-earth second source — that is the kill, so MP and Lynas die if thrown as longs.",
+      "what_it_is": "Input / squeeze side of TH-02. Magnet vehicle is now named (ST-03). Trailing-edge socket is still unnamed.",
+      "what_it_is_not": "A US humanoid. A Western mine or magnet second source. A fabless MCU with a robot slide.",
+      "why_unfinished": "Magnet name is screened and waiting. Trailing-edge socket: GigaDevice is fabless plus a product story, not a verified robot socket we can stand behind. Hua Hong / SMIC is a China-foundry factor this desk does not understand well enough this pass. Too hard is a legal disposition.",
+      "clock_kill": "inherits TH-02 — magnet export relief plus a real Western second source, or Chinese humanoid shipments fail in public numbers.",
+      "thesis": "TH-02",
+      "spawns": [
+        "ST-03",
+        "ST-04"
+      ],
+      "world_state": "early",
+      "order": "fundamental-first",
+      "tape": "14 Aug 2026. China still makes most of the permanent magnets a motor needs. JL MAG 6680.HK HK$17.16, −7% YTD, −40% from 13 Oct 2025. The tape of the landlord is not running. MP $58.74 bounced +42% off its 29 Jul low — that is the kill-side name catching a bid, not our hold.",
+      "how_the_hold_fails": "Even if China still owns the magnet, the listed landlord can be an EV-cycle stock (JL MAG’s FY2025 magnet revenue was mostly NEV, robot rotors still small-batch). Export licences can sit with the state, not the shareholder. A Made-in-USA label after substantial transformation is not a second mine, but a real Western magnet plant would be the kill.",
+      "desk": "Magnet vehicle written. Socket unnamed. Sit. Not a buy."
     }
   ],
   "stocks": [
     {
-      "id": "ST-01",
+      "id": "ST-04",
       "kind": "stock",
       "lifecycle": "unfinished",
       "unfinished": true,
       "buy": false,
-      "title": "Taiwan Semiconductor (TSM)",
-      "object": "The default name people already use for the foundry side of TH-01. Unfinished. No live price. May be crowded. Not a buy.",
-      "what_it_is": "A stock name spawned by CA-01. Not screened.",
-      "why_unfinished": "No live price. No written skew. The default name may already have no skew left \u2014 that is why TH-01 is live and not on the desk.",
-      "from": "CA-01",
-      "thesis": "TH-01",
-      "live_price": null,
-      "note": "May be crowded / the default name. Not a buy."
-    },
-    {
-      "id": "ST-02",
-      "kind": "stock",
-      "lifecycle": "unfinished",
-      "unfinished": true,
-      "buy": false,
-      "title": "Power landlords (names not picked)",
-      "object": "The grid / power names people already use for the same TH-01 factor. Unfinished. Several names may be one bet. Not a buy. No ticker written \u2014 a specific name we cannot stand behind is worse than a generic card.",
-      "what_it_is": "A stock-shaped slot spawned by CA-01. Names not picked.",
-      "why_unfinished": "No ticker chosen. No live price. Several names here may be one factor bet, not several bets.",
-      "from": "CA-01",
-      "thesis": "TH-01",
       "ticker": null,
+      "title": "Trailing-edge robot MCU sockets (names not picked)",
+      "object": "Generic slot under CA-02. No ticker this pass. GigaDevice 3986.HK is fabless plus a humanoid product story (14 Aug HK$511, −58.8% from 29 Jun HK$1,241, +129% from the 13 Jan listing print) — not a verified socket we can stand behind. Hua Hong 1347.HK / SMIC 0981.HK are China trailing-edge plants and a geopolitics factor this desk does not understand well enough. NXP / Infineon are the side that is supposed to be losing the socket. Too hard. Unnamed is cleaner than a fake screen.",
+      "what_it_is": "A stock-shaped slot spawned by CA-02. Names not picked.",
+      "why_unfinished": "No ticker chosen. Circle of competence, not a missing column.",
+      "from": "CA-02",
+      "thesis": "TH-02",
       "live_price": null,
-      "note": "Do not invent a specific ticker. Generic card on purpose."
+      "note": "Do not invent a specific ticker. Generic card on purpose.",
+      "desk": "Not a buy. Lifecycle: unfinished stock."
     }
   ],
   "monitor": [
@@ -343,27 +382,211 @@
       "id": "WL-01",
       "kind": "waitlist",
       "lifecycle": "waitlist",
-      "title": "Watches ST-01 / ST-02. Arms only on two conditions",
-      "object": "It does not arm because the picture is true. It arms only if both conditions print on the stock names. It watches the stocks, not the expression.",
-      "watches": ["ST-01", "ST-02"],
+      "title": "Watches ST-01 TSM. Arms only on two conditions",
+      "object": "Hang is already written. It does not arm because the picture is true. It arms only if both conditions print on this name.",
+      "watches": [
+        "ST-01"
+      ],
       "arms_only_if_both": [
-        "a real drawdown in the names (ST-01 / ST-02) \u2014 not a headline, a price that has already moved",
-        "factory / rental / memory prints still tight. If the prints ease, WL-01 dies with TH-01."
+        "a real second drawdown in TSM — toward or through the 29 Jul close $374.67. A price that has already moved, not a headline.",
+        "factory / rental / memory prints still tight. If the prints ease, this dies with TH-01."
+      ],
+      "size": null,
+      "entry": null,
+      "note": "No size. No entry until both. One condition is not enough. Same factor as WL-02 and WL-03.",
+      "from": "CA-01",
+      "thesis": "TH-01"
+    },
+    {
+      "id": "WL-02",
+      "kind": "waitlist",
+      "lifecycle": "waitlist",
+      "title": "Watches ST-08 MU. Arms only on two conditions",
+      "object": "Hang is already written. It does not arm because the picture is true. It arms only if both conditions print on this name.",
+      "watches": [
+        "ST-08"
+      ],
+      "arms_only_if_both": [
+        "a real second drawdown in MU — toward or through the 29 Jul close $739. A price that has already moved, not a headline.",
+        "factory / rental / memory prints still tight. If the prints ease, this dies with TH-01."
+      ],
+      "size": null,
+      "entry": null,
+      "note": "No size. No entry until both. One condition is not enough. Same factor as WL-01 and WL-03.",
+      "from": "CA-01",
+      "thesis": "TH-01"
+    },
+    {
+      "id": "WL-03",
+      "kind": "waitlist",
+      "lifecycle": "waitlist",
+      "title": "Watches ST-02 VST. Arms only on two conditions",
+      "object": "Hang is already written. It does not arm because Texas paused the queue. It arms only if both conditions print on this name.",
+      "watches": [
+        "ST-02"
+      ],
+      "arms_only_if_both": [
+        "a real further drawdown in VST — toward or through the 19 May 2026 low $134.71 — or a contracted-load print that is not phantom (Amazon 2027 hookup still dated, or the ERCOT audit actually culls the 474 GW to real MW). A price or a filing, not a headline.",
+        "TH-01 physical still tight (utilization, rents, memory, no cancelled plant capex). If the chip-plant variable breaks, this dies with the theme even if ERCOT looks busy."
+      ],
+      "size": null,
+      "entry": null,
+      "note": "No size. No entry until both. The 20 Aug PUCT meeting is a date, not a condition. Same factor as WL-01 and WL-02.",
+      "from": "CA-01",
+      "thesis": "TH-01"
+    },
+    {
+      "id": "WL-04",
+      "kind": "waitlist",
+      "lifecycle": "waitlist",
+      "title": "Watches ST-03 JL MAG. Arms only on two conditions",
+      "object": "Hang is already written. It does not arm because China owns the magnet. It arms only if both conditions print on this name.",
+      "watches": [
+        "ST-03"
+      ],
+      "arms_only_if_both": [
+        "robot / servo magnet revenue leaves small-batch in a public print, or a further drawdown through the 30 Jul HK$16.04 low. A filing or a price, not a humanoid headline.",
+        "China still owns the magnet chain — no magnet export relief plus a real Western second source. If that kill prints, this dies with TH-02."
       ],
       "size": null,
       "entry": null,
       "note": "No size. No entry until both. One condition is not enough.",
-      "from": "CA-01",
-      "thesis": "TH-01"
+      "from": "CA-02",
+      "thesis": "TH-02"
     }
   ],
   "action": [],
   "book": [],
   "off_the_desk": [],
   "judge": {
-    "pass": "first",
+    "pass": "micro-15aug",
     "notes": [
-      "Pipe ran. Three theses, none on the desk. One thesis candidate (expression, not a name). Two unfinished stock names spawned from it. One conditional wait on those names. Working filter, not a broken engine. No live prices."
+      "Micro desk, 15 Aug 2026. Themes left as Macro wrote them. No new thesis. Physical side of TH-01 still confirmed (HBM/DRAM booked through 2027; MU FQ3 DRAM prices +low-60s% QoQ; Texas large-load queue ~474 GW with an Abbott audit pause 3 Aug). Plant equities spent. Power is the less-spent tape and still not a buy. TH-02 now has a written magnet vehicle. Trailing-edge socket stays unnamed (too hard). TH-03 still failed skew. Four waitlists, all needing both conditions. Action empty. Book empty. TSM, MU, and VST are one TH-01 factor, not three bets. MP dies as the kill side of TH-02."
     ]
-  }
+  },
+  "screen": [
+    {
+      "id": "ST-01",
+      "kind": "screen",
+      "lifecycle": "screened",
+      "unfinished": false,
+      "buy": false,
+      "ticker": "TSM",
+      "title": "Taiwan Semiconductor (TSM) — hang is real, skew is not",
+      "object": "The default foundry name for CA-01. Honest vehicle for the scarce plant. Already the name everyone uses. Not a buy at this tape.",
+      "from": "CA-01",
+      "thesis": "TH-01",
+      "thinking": "6/10",
+      "hang": "TH-01 / CA-01. They own the leading-edge plants. Customer cannot leave that node for a long time. This is a franchise, and the asking price already assumes a lot of the good case.",
+      "how_it_makes_money": "Customers pay to have leading-edge chips made in plants almost nobody else can copy. That is the scarce slot.",
+      "invert": "The good case is the default Wall Street hold. A true bottleneck can still leave no unused skew. One customer set (AI accelerators) can keep the surplus. Geopolitics is a company risk, not the TH-01 kill.",
+      "world_state": "confirmed physical, spent on this name",
+      "priced": "14 Aug 2026 Yahoo last $426.35. +40.3% YTD from 31 Dec 2025 $303.89. 30 Jun $477.57 (the 52-week high in this window). 29 Jul scare close $374.67. Now +13.8% off that close and only −10.7% from the high. July was a wiggle, already bought back.",
+      "downside": "Retest of 29 Jul $374.67 is about 12% from $426. A real TH-01 kill is larger than that. Do not write 10x down.",
+      "upside": "Back to $477.57 is about 12%. Residual if P1 holds to Christmas. Also what the default foundry holder already owns.",
+      "clock": "TH-01 6–12 months, overlaps P1 (bottleneck still true at Christmas).",
+      "kill": "Inherited: utilization down, rental and memory prices down, large capex cancelled. None have printed.",
+      "other_vehicle": "Same factor as ST-02 and ST-08. Power is the less-spent tape. Memory (MU) bounced harder. Sitting is the other use of the same capital.",
+      "disposition": "MONITOR via WL-01. Hang is real. Skew is not, after the July scare was bought back.",
+      "desk": "Not a buy. Wait for both conditions."
+    },
+    {
+      "id": "ST-02",
+      "kind": "screen",
+      "lifecycle": "screened",
+      "unfinished": false,
+      "buy": false,
+      "ticker": "VST",
+      "title": "Vistra (VST) — power landlord, clocks do not match",
+      "object": "The named power vehicle for CA-01. Texas merchant generator plus a 20-year 1.2 GW Comanche Peak PPA with Amazon from 2027. Closest US equity to ‘owns the electrons.’ CEG, NRG, and TLN are the same factor — do not stack them.",
+      "from": "CA-01",
+      "thesis": "TH-01",
+      "thinking": "7/10",
+      "hang": "TH-01 / CA-01, power side. They already own plants on ERCOT. The Texas large-load queue is the physical tell. Not a turbine vendor (GEV) and not a cooling vendor (VRT).",
+      "how_it_makes_money": "They make electricity and sell it, retail and wholesale, and they hedge. The Amazon nuclear PPA is the piece a hyperscaler cannot easily leave once hooked. The rest is a commodity cycle with a hedge book.",
+      "invert": "CEO James Burke, 8 Aug earnings: 2026 ERCOT wholesale is soft, data-center hookup is 2027–28, and he wants the 474 GW queue culled. That is CA-01’s phantom-queue failure, said out loud. The Amazon PPA was announced 29 Sep 2025 during the run to $217.92. Load-growth talk was cut to 4–6% from 5–6%. PJM price-cap talk. This is a cycle plus one dated PPA, not a foundry franchise. Clock mismatch: TH-01 is a 6–12 month chip-plant bet; Vistra’s data-center load is a 2027–28 hookup.",
+      "world_state": "physical queue is real and also phantom; name tape is a 2026 fade after a 2025 AI-power run",
+      "priced": "14 Aug 2026 Yahoo last $148.13. −8.2% YTD from 31 Dec 2025 $161.33. 22 Sep 2025 high $217.92 (−32%). 19 May 2026 low $134.71. 29 Jul $142.81, now +3.7%. About $55B cap on mid-Aug 2026 reads. Q2 2026 ongoing adj. EBITDA $1.767B; 2026 guide $6.8–7.6B reaffirmed. Back to $217.92 is about +47%. Not desk skew.",
+      "downside": "Retest of 19 May $134.71 is about 9% from $148. Further if 2027 ERCOT forwards stay below their midpoint opportunity. Do not write 10x down — integrated retail plus hedges.",
+      "upside": "Old high $217.92 is +47%. That is a 2025 story getting re-rated, not unused TH-01 skew. Street already used Vistra as the default AI-power name last year.",
+      "clock": "Company clock is 2027–28 hookup and the PUCT 20 Aug good-cause meeting on Batch Zero. TH-01’s Christmas bottleneck does not transfer cleanly onto 2027 load.",
+      "kill": "Do not inherit the chip-plant kill onto a generator without a sentence. This name dies if contracted data-center load slips, ERCOT stays soft into the PPA start, or the queue audit shows the 474 GW was mostly phantom and nothing real replaces it. A second semi scare without those prints is not this name’s kill.",
+      "other_vehicle": "CEG / NRG / TLN are the same factor. TSM and MU are the plant side of the same theme, already spent. Sit is the other use of the capital.",
+      "disposition": "MONITOR via WL-03. Hang is the best power join. Skew is not. Clocks do not match. Not Action.",
+      "desk": "Not a buy. Same shape as the other waits: both conditions, or nothing."
+    },
+    {
+      "id": "ST-08",
+      "kind": "screen",
+      "lifecycle": "screened",
+      "unfinished": false,
+      "buy": false,
+      "ticker": "MU",
+      "title": "Micron (MU) — hang is real, skew is not",
+      "object": "Memory plants, not the foundry default and not the power slot. Memory is already in TH-01’s kill language. Honest hang. Crowded/priced is the gate. Same factor as TSM. SK hynix 000660.KS is the other vehicle (14 Aug ₩1,645,000, −43.6% from 22 Jun high) — deeper drawdown, still one bet, Korean listing. Do not spawn it as a second name.",
+      "from": "CA-01",
+      "thesis": "TH-01",
+      "thinking": "8/10",
+      "hang": "TH-01 / CA-01. They own the memory plants. 12 Aug: Sadana said 2027 tighter than 2026, DRAM the number-one constraint, not power. FQ3 DRAM prices +low-60s% QoQ on low-single-digit bits.",
+      "how_it_makes_money": "They sell memory from plants that take years to copy. HBM displaces several bits of ordinary DRAM. That is a cycle with a scarce slot, not a software franchise.",
+      "invert": "Peak-cycle earnings look cheap and are not a gift. 2018 trailing P/E was 4.6–7.4. Customer can dual-source SK hynix and Samsung. Contracts can lock the rent before the shareholder gets the squeeze.",
+      "world_state": "confirmed physical, spent on this name",
+      "priced": "14 Aug 2026 Yahoo last $971.66. 13 Aug close in the prior walk was $949.83. 31 Dec 2025 $285.41, YTD +240%. 25 Jun high $1,213.56 (−19.9%). 29 Jul close $739.00, now +31.5% off that trough. July scare was in the shares and has been more than half-bought-back. Functionally the default US memory-tight equity.",
+      "downside": "Retest of 29 Jul $739 is about 24% from $972. A real TH-01 kill is a cycle-break name, not a 10% dip.",
+      "upside": "52-week high $1,213.56 is +25% from $972. Residual if P1 holds to Christmas. Also what the crowded holder already owns.",
+      "clock": "TH-01 6–12 months, overlaps P1. Next company print ~22–23 Sep (FQ4). 2027 bookings are the physical clock.",
+      "kill": "Utilization down, rental and memory prices down, large capex cancelled. None have printed. A second share-price scare without those prints is not a kill.",
+      "other_vehicle": "SK hynix is the same factor with a deeper July hole. TSM is the foundry default. VST is the less-spent tape. Sit is allowed.",
+      "disposition": "MONITOR via WL-02. Hang is real. Skew is not, at $972 after +240% YTD and a bounce of the July close.",
+      "desk": "Not a buy. Wait for both conditions."
+    },
+    {
+      "id": "ST-03",
+      "kind": "screen",
+      "lifecycle": "screened",
+      "unfinished": false,
+      "buy": false,
+      "ticker": "6680.HK",
+      "title": "JL MAG (6680.HK) — magnet landlord, still an EV cycle",
+      "object": "The named magnet vehicle for CA-02. Dual-listed 300748.SZ / 6680.HK. They make the NdFeB magnets a motor needs. Not a US humanoid. Not MP. Northern Rare Earth 600111.SS is upstream of the same chain (A-share only this pass).",
+      "from": "CA-02",
+      "thesis": "TH-02",
+      "thinking": "6/10",
+      "hang": "TH-02 / CA-02 / OB-03. They already make the magnet. FY2025 magnet blanks 34,400 tonnes; NEV was about half of revenue; humanoid motor magnet assemblies were small-batch, not the P&L.",
+      "how_it_makes_money": "Customers pay for sintered NdFeB magnets and rotors. Switching a qualified magnet line is slow. That is the slot. The customer set today is mostly car and wind, not robots.",
+      "invert": "This can be a true China-owns-the-magnet fact and still be an NEV cycle stock. Export licences sit with the state. H-share liquidity and CCP risk are company facts, not the theme. Back to the Oct 2025 high is about +67%, not 10x. Robot rotors are a slide until they print.",
+      "world_state": "early on the input; name tape faded from 2025, not a 2026 melt-up",
+      "priced": "14 Aug 2026 Yahoo last HK$17.16 (6680.HK). −7.0% YTD from 31 Dec 2025 HK$18.45. 13 Oct 2025 high HK$28.72 (−40.3%). 30 Jul 2026 low HK$16.04. 29 Jul HK$16.31, now +5.2%. A-share 300748.SZ CNY 27.66, −18.9% YTD. The tape of the landlord is quiet.",
+      "downside": "Retest of HK$16.04 is about 7%. A real TH-02 kill (Western second source that works) is larger. Do not write 10x down.",
+      "upside": "Old high HK$28.72 is +67%. That is a 2025 rare-earth bounce, not unused robot-squeeze skew.",
+      "clock": "TH-02 6–12 months. Company clock is whether robot rotor shipments leave small-batch in the next prints, and whether export licences stay ordinary.",
+      "kill": "Inherited: magnet export relief plus a real Western second source, or Chinese humanoid shipments fail in public numbers. Also dies if NEV magnet volumes roll over and robots never show up in the mix.",
+      "other_vehicle": "Northern Rare Earth is the same chain, harder listing. MP is the kill side. Socket (ST-04) stays unnamed. Sit is allowed.",
+      "disposition": "MONITOR via WL-04. Hang is the magnet. Skew is not desk-grade until robots are more than a slide.",
+      "desk": "Not a buy. Wait for both conditions."
+    },
+    {
+      "id": "ST-12",
+      "kind": "screen",
+      "lifecycle": "screened",
+      "unfinished": false,
+      "buy": false,
+      "ticker": "MP",
+      "title": "MP Materials (MP) dies",
+      "object": "Thrown as a rare-earth long. That is the Western second source. TH-02’s kill is magnet export relief plus a real Western second source. Longing MP is the expensive side of the same fact, not the hold.",
+      "from": "thrown",
+      "thesis": null,
+      "thinking": "2/10",
+      "hang": "None. Wrong side of TH-02 / CA-02.",
+      "how_it_makes_money": "They mine and are trying to make magnets in the US. That is the second-source project the thesis says does not yet exist as a real substitute.",
+      "invert": "If MP works, TH-02 dies. If MP does not work, this equity is the failed project, not the China landlord.",
+      "priced": "14 Aug 2026 Yahoo last $58.74. +16.3% YTD. 14 Oct 2025 high $98.65 (−40.5%). 29 Jul low $38.10, now +54% off that low. The bounce is the kill-side name catching a bid.",
+      "downside": "Retest $38.10 is about 35%. Company project risk, not a theme we are holding.",
+      "upside": "Old high $98.65 is +68%. That would be the kill printing.",
+      "clock": "TH-02 clock does not transfer onto the kill-side name as a long.",
+      "kill": "No thesis kill to inherit as a long.",
+      "disposition": "dies",
+      "desk": "Not a buy. Failed join. Do not invent a parent."
+    }
+  ]
 }
