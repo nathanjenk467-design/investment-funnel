@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Prove the daily pipe immediately. Do not wait for 8am Hong Kong.
+set -euo pipefail
+root="$(cd "$(dirname "$0")/.." && pwd)"
+exec python3 "$root/scripts/daily_pipe.py" run-now "$@"

@@ -1,0 +1,6 @@
+# Local pipe output. Do not publish the private board or notebook.
+runs/
+inbox/
+.DS_Store
+__pycache__/
+*.pyc

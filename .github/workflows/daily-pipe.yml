@@ -1,0 +1,32 @@
+name: daily-pipe
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 8am Hong Kong is 00:00 UTC, all seven days.
+    - cron: "0 0 * * *"
+  push:
+    paths:
+      - "scripts/daily_pipe.py"
+      - "pipe/**"
+      - "docs/**"
+      - ".github/workflows/daily-pipe.yml"
+  pull_request:
+
+jobs:
+  self-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prove frozen Board fails and run-now does not wait for 8am
+        run: python3 scripts/daily_pipe.py self-test
+
+  run-now:
+    runs-on: ubuntu-latest
+    needs: self-test
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute the pipe now (fixture grow + keep + names)
+        run: python3 scripts/daily_pipe.py run-now
+      - name: Prove a frozen Board is a fail
+        run: python3 scripts/daily_pipe.py run-now --frozen

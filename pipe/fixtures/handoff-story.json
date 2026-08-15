@@ -1,0 +1,13 @@
+{
+  "note": "Grows the Board with a story, not a candidate judgement. Thesis stage must write a duplicate-stop.",
+  "cards": [
+    {
+      "id": "B-05",
+      "kind": "board_card",
+      "title": "A reprint of the plants story",
+      "story": "Another tape of the same factory shortage. Not a new call.",
+      "force": "same force as B-01",
+      "job": "already_a_live_theme"
+    }
+  ]
+}
