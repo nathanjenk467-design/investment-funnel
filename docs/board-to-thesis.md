@@ -40,7 +40,7 @@ Two standing prohibitions:
 
 This document does not assert what markets are doing today. Examples are patterns, or the house’s already-kept walk used to show the method. If Macro wants to claim something is live, it reads the Board (and, only if needed, a grabbed fact) and says so with the date.
 
-The Architect’s hypothesis — seeing skills plus writing gates; one situation; invert; priced or not checked; clock as a tag; correlation without a situation mints junk — is treated as a starting claim. This file keeps it where the house walk and the research agree, extends it where a serious shop actually writes more than it “sees,” and marks the rest **[open]**.
+The Architect’s hypothesis — seeing skills plus writing gates; one situation; invert; priced or not checked; clock as a tag; correlation without a situation mints junk — is treated as a starting claim. This file **keeps** that claim. It **extends** it with notebook-first, concentration, changing your mind as a written version (not a drift), reflexivity as an amplifier rather than a situation, and a written objection before the draft is offered. Nothing in the hypothesis is discarded. What stays **[open]** is display and hand-off (section 9), not the gates.
 
 ---
 
@@ -104,6 +104,8 @@ A now-tagged thesis is already moving the world. A 6–12 month thesis is a forw
 
 A thesis candidate: the *shape* of how to sit with a kept thesis. Not a name. Not a buy. Not a ticker.
 
+In this file, **hold** always means that expression. It does not mean a price being pinned (that idea, if it appears, is written as “pinned” or “held in place”). Do not mix the two. **[ours]**
+
 This conversion does not write holds. Writing a hold because the draft felt strong is jumping the funnel. **[shop]**
 
 ### 2.5 The one-sentence test
@@ -142,7 +144,7 @@ The knowledge base, in this shop, is three layers, read in this order: **[shop]*
 
 1. Nathan’s notebook — what he already kept or dropped, in his words.
 2. The cooked Board and the live theses — situations already housed, calls already open, prints already sitting on a theme.
-3. World knowledge — historical analogs and ordinary facts about how a mechanism works, used only when they share the *hold*, the *cost*, and the *kill shape*, not the headline.
+3. World knowledge — historical analogs and ordinary facts about how a mechanism works, used only when they share the thing being pinned, the cost of pinning it, and the kill shape, not the headline.
 
 Resonance is “we have already seen this *mechanism*.” It is not “this feels like a year people talk about.” An analog that only matches the newspaper word is decoration. An analog that matches a price held by a finite buffer, or a scare in the shares while the physical thing did not move, is usable — as a check on the situation, not as a claim that the same ending is due. **[sourced]** for analog-as-mechanism; **[ours]** for refusing headline-rhyme.
 
@@ -197,7 +199,7 @@ The present is already in the price. A draft that only restates what everyone ca
 Write one of these, in ordinary sentences:
 
 - what the world already assumes, and where there might still be room, **or**
-- **not checked** — and then the draft cannot pretend it has skew.
+- **not checked** — and then the draft cannot pretend there is still room.
 
 “Not checked” is an honest line. It is how the house already kept a theme off the desk. Filling a priced line with a vibe so the draft looks finished is a bug. **[shop]**
 
@@ -248,6 +250,8 @@ This is not a score. It is a paragraph. Nathan reads it.
 ## 4. The conversion process
 
 Same order every time this conversion is run. The early steps are the ones people skip in order to get to a title, so they are numbered.
+
+Tonight you produce one or more of these, and nothing else: a **thesis draft** (section 6), a **sit**, or a **join-to-theme** note. You do not produce a live thesis, a hold, or a name.
 
 Sitting after any step is a legal output. A blank pass that skipped to a title is not sitting. It is a skipped pass.
 
@@ -559,3 +563,17 @@ The kept walk, used only to show the method. Not a market claim in this document
 **If he keeps.** Notebook: his words. The agreeing call stays evidence. The funding card stays off this theme. Later prints that agree sit here.
 
 **If he drops.** Notebook: his words. A later bot does not re-pitch the same situation with a better title.
+
+**Filled draft shape (method only).** What the offer looks like. Not a keep. Not a live id.
+
+- **Situation.** The plants that make the chips were not built fast enough. That shortage is still the brake. The scare that already ran was in the shares, not in the factories.
+- **What it is not.** An invasion story. A “next model” story. A collage of everything in the same newspaper week.
+- **From the Board.** The under-built plants, the scare that was only in the shares, compute staying dear, capital following the physical thing — same force, same kill.
+- **Left on the Board.** Ordinary funding may be exhausted (neighbor, different kill). Power is the problem and nobody agrees the path (fight). The payment rail (other situation or nothing). Ugly inputs (other situation).
+- **Clock.** 6–12 months, or the dated window on the open call that the bottleneck still holds.
+- **Kill.** Utilization down, rents and memory down, large build programs cancelled.
+- **Not a kill.** A second scare in the shares with no factory print.
+- **Priced.** The scare already ran in the shares. Default ways of sitting with this may be crowded. Not checked against a live tape.
+- **Objection.** This may already be the consensus physical-scarcity story, and the scare may have put it back in the price.
+- **Notebook.** Empty on a first pass; on a later pass, his keep or drop in his words.
+- **Disposition asked of Nathan.** Keep, drop, park, sit, or join to a theme he already kept.
