@@ -1,0 +1,50 @@
+{
+  "note": "Synthetic fixture for the daily pipe. Not the private local board. Method only.",
+  "board": [
+    {
+      "id": "B-01",
+      "kind": "board_card",
+      "title": "The plants are still the scarce thing",
+      "story": "The factories that make the chips were not built fast enough. That shortage is still the brake.",
+      "force": "the physical thing stays scarce",
+      "job": "already_a_live_theme"
+    },
+    {
+      "id": "B-02",
+      "kind": "board_card",
+      "title": "The circular paper of that build may not hold",
+      "story": "If ordinary funding is exhausted, the stack starts lending to itself. That can look like a boom on paper.",
+      "force": "the paper of the build can break",
+      "job": "already_a_live_theme"
+    },
+    {
+      "id": "B-03",
+      "kind": "board_card",
+      "tags": ["fight"],
+      "title": "Power is the problem. Nobody agrees what happens next.",
+      "story": "The problem is agreed. The path is not. The world will pick by what actually fails first.",
+      "force": "a fight, not a call",
+      "job": "fight"
+    }
+  ],
+  "theses": [
+    {
+      "id": "TH-01",
+      "kind": "thesis",
+      "lifecycle": "live",
+      "title": "They keep building, and the plants stay scarce",
+      "claim": "The factories stay the brake. A scare in the shares is not a factory event.",
+      "from_board": ["B-01"],
+      "clock": "6-12 months"
+    },
+    {
+      "id": "TH-02",
+      "kind": "thesis",
+      "lifecycle": "live",
+      "title": "The circular funding of that build will not hold",
+      "claim": "One of the alternative deals will break in public. A podcast complaining is not enough.",
+      "from_board": ["B-02"],
+      "clock": "6-12 months"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "note": "Cooked handoff that grows the Board. Synthetic. Not a live pull.",
+  "cards": [
+    {
+      "id": "B-04",
+      "kind": "board_card",
+      "title": "The payment rail has not caught up to the model",
+      "story": "Intelligence is getting expensive. The rails that pay for it are still yesterday's rails. The model and the payment have not joined up.",
+      "force": "the old money system has not caught up",
+      "job": "candidate_judgement"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "lastRunAt": null,
+  "timezone": "Asia/Hong_Kong",
+  "trigger": null,
+  "result": null,
+  "failReason": null,
+  "board": null,
+  "stages": null,
+  "note": "Pipe has never run. A null lastRunAt is a fail of the clock, not a pass of the desk. The runner writes runs/last-run.json (local, not published)."
+}
