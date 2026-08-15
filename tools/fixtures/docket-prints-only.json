@@ -1,0 +1,24 @@
+{
+  "as_of": "2026-08-16",
+  "note": "Method fixture. Fresh prints on ids already on the Board. Zero new cards. Must fail.",
+  "items": [
+    {
+      "docket_id": "N-PRINT-15",
+      "kind": "fresh_print",
+      "title": "AI chip factories are still dramatically under-built",
+      "story": "A new tape this week ran into the same wall.",
+      "force": "they did not build enough plants.",
+      "from": "prints-only fixture",
+      "updates_board_id": "15"
+    },
+    {
+      "docket_id": "N-PRINT-7",
+      "kind": "fresh_print",
+      "title": "In July the market panicked. The factories did not.",
+      "story": "Another share-price wiggle. Same situation.",
+      "force": "the share price and the factory can point opposite ways.",
+      "from": "prints-only fixture",
+      "updates_board_id": "7"
+    }
+  ]
+}

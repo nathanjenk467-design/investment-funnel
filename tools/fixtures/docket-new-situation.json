@@ -1,0 +1,15 @@
+{
+  "as_of": "2026-08-16",
+  "note": "Method fixture only. Not a live market claim. One situation that is not already on the Board.",
+  "items": [
+    {
+      "docket_id": "N-SYNTH-WATER",
+      "kind": "kept_situation",
+      "title": "The desert plant was denied the water it already counted on",
+      "story": "Method fixture only. A plant that was already in the plan cannot take water the basin did not grant. That is a different gate from 'they did not build enough plants.'",
+      "force": "the water right is the gate, not the chip order.",
+      "from": "synthetic intake fixture",
+      "situation_key": "desert-water-denied"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "as_of": "2026-08-14",
+  "note": "Public first-walk Board titles and ids only. Method fixture. Not a publish of the private local board.",
+  "cards": [
+    {
+      "id": "15",
+      "title": "AI chip factories are still dramatically under-built",
+      "situation_key": "plant"
+    },
+    {
+      "id": "7",
+      "title": "In July the market panicked. The factories did not.",
+      "situation_key": "july-scare"
+    },
+    {
+      "id": "16",
+      "title": "Compute is getting dearer, and old cards still earn",
+      "situation_key": "old-cards"
+    },
+    {
+      "id": "1",
+      "title": "The money is going to the plants, not the next model",
+      "situation_key": "capital-to-plants"
+    },
+    {
+      "id": "6",
+      "title": "Ordinary funding may be exhausted. That is why they are lending to themselves.",
+      "situation_key": "circular-paper"
+    },
+    {
+      "id": "11",
+      "title": "Power is the problem. Nobody agrees what happens next.",
+      "situation_key": "power-fight"
+    },
+    {
+      "id": "10",
+      "title": "China is locking the ugly supply chains"
+    },
+    {
+      "id": "18",
+      "title": "The payment system has not caught up to the model"
+    },
+    {
+      "id": "P1",
+      "title": "The chip factories will still be the bottleneck at Christmas, even if the stocks crash again"
+    },
+    {
+      "id": "P2",
+      "title": "If ordinary money is exhausted, one of these alternative deals will break in public within a year"
+    },
+    {
+      "id": "P3",
+      "title": "OpenAI and Anthropic will still take the money. Cheap models will take the usage."
+    },
+    {
+      "id": "OB-01",
+      "title": "China catching up in trailing-edge robotics semiconductors"
+    },
+    {
+      "id": "OB-02",
+      "title": "Unitree G1 at $16K against a ~$100K Western humanoid"
+    },
+    {
+      "id": "OB-03",
+      "title": "China holds about 90% of permanent magnets"
+    }
+  ]
+}
