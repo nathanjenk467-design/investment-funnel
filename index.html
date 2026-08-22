@@ -47,6 +47,13 @@ header{padding:14px 32px 4px}header h1{margin:0 0 4px;font-size:18px;font-weight
 .deadstrip .sub,.deadstrip .foot{margin:0 2px 8px;font-size:11px;line-height:1.35;color:var(--muted)}
 .judge{display:none;margin:8px 32px 28px;padding:12px 14px;background:var(--panel);border-radius:10px;border:1px solid var(--line);font-size:12px;color:var(--muted);line-height:1.45}
 .judge.on{display:block}.judge b{color:#c9b27a;font-weight:650}
+/* seam: link across to the MACHINE surface (new-narrative-hunter site/app.html).
+   Link, not merge. That file is local-only; if it isn't present the link hides itself. */
+.seam{display:none;margin:0 32px 18px;padding:10px 14px;background:var(--panel);border:1px solid var(--line);border-radius:10px;font-size:12px;color:var(--muted);line-height:1.5}
+.seam.on{display:block}
+.seam a{color:#8fbf9f;font-weight:650;text-decoration:none;border-bottom:1px solid #1a4d2e}
+.seam a:hover{color:#b6dcc2}
+.seam b{color:#c9b27a;font-weight:650}
 </style>
 </head>
 <body>
@@ -63,6 +70,33 @@ header{padding:14px 32px 4px}header h1{margin:0 0 4px;font-size:18px;font-weight
 <div class="pane on" id="pane-funnel"></div>
 <div class="pane" id="pane-candidates"></div>
 <div class="judge" id="judge"></div>
+<div class="seam" id="seam"></div>
+<script>
+/* ---- seam to the machine surface (link, never merge) ----------------------
+   The refinery (new-narrative-hunter) renders site/app.html: Desk, Candidates,
+   Theses, Trends, Narrative Lifecycle. That file is LOCAL-ONLY by standing rule
+   (it carries live positions; this repo is public). So: only offer the link when
+   this page is itself being read off the local filesystem. When served over
+   http(s) the seam shows a text pointer and no link. Nothing here ever writes
+   or reads the machine file's contents — it is a hyperlink and nothing else. */
+(function(){
+  var APP="file:///Users/max/investment-system/site/app.html";
+  var el=document.getElementById("seam");
+  if(!el) return;
+  if(location.protocol==="file:"){
+    el.innerHTML='<b>Machine surface.</b> This board is the human editorial funnel — '+
+      'hand-written pictures. The refinery\u2019s machine-ranked view (Desk, Candidates, '+
+      'Theses, Trends, Narrative Lifecycle) lives at '+
+      '<a href="'+APP+'">app.html \u2197</a>. Two surfaces, linked, never merged.';
+  }else{
+    el.innerHTML='<b>Machine surface.</b> This board is the human editorial funnel. '+
+      'The refinery\u2019s machine-ranked view is local-only (it carries live positions) \u2014 '+
+      'open <code>site/app.html</code> in the new-narrative-hunter checkout. '+
+      'Two surfaces, linked, never merged.';
+  }
+  el.classList.add("on");
+})();
+</script>
 <script>
 (function(){
 var SHA_URL="https://api.github.com/repos/nathanjenk467-design/investment-funnel/commits/main";
